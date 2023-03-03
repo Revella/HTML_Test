@@ -1,0 +1,9 @@
+/*[속성선택자] 상태 + 동위선택자*/
+input[type=checked]:checked + div {
+  height: 0;
+}
+div {
+  overflow: hidden ; /* 넘치는 값 숨기라는 의미 */
+  width: 650px; height: 300px;
+  transition: 1s; /*스무스하게 사라짐*/
+}

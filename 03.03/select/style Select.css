@@ -1,0 +1,20 @@
+ul {
+  overflow: hidden;
+}
+/* 부모요소를 빠져나가지 못하게 하기위해 overflow:hidden 값을 줌 */
+li {
+  list-style: none;
+  float: left;  padding: 15px;
+}
+li:nth-child(2n) {
+  background-color: red;
+  }
+li:nth-child(2n+1) {
+  background-color: blue;
+  }
+li:first-child {
+  border-radius: 10px 0 0 10px;
+}
+li:last-child {
+  border-radius: 0 10px 10px 0;
+}

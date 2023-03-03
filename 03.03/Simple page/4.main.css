@@ -1,0 +1,37 @@
+/* 본문 */
+#content {
+  width: 960px; 
+  margin: 0 auto;
+  overflow: hidden;
+}
+#content > #main_section {
+  width: 750px; float: left;
+}
+#content > #main_saide {
+  width: 200px; float: left;
+  margin-left: 10px;
+}
+#main_section > article.main_article {
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid black;
+}
+/* 본문하단 */
+input:nth-of-type(1) {
+  display: none;
+}
+input:nth-of-type(2) {
+  display: none;
+}
+input:nth-of-type(1) ~ div:nth-of-type(1) {
+  display: none;
+}
+input:nth-of-type(1):checked ~ div:nth-of-type(1) {
+  display: block;
+}
+input:nth-of-type(2) ~ div:nth-of-type(2) {
+  display: none;
+}
+input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+  display: block;
+}
