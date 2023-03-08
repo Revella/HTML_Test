@@ -1,0 +1,57 @@
+@import url(/Basic_code/reset.css);
+body {
+  width: 200px;
+  margin: 200px auto;
+  -webkit-perspective: 4000;
+}
+section {
+  width: 200px; height: 200px;
+  position: relative;
+  animation: rint 3s ease-in-out 0s infinite alternate;
+  transform-style: preserve-3d;
+}
+@keyframes rint {
+  from {
+    transform: rotateX(0deg) rotateY(0) rotateZ(0);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+div {
+  position: absolute;
+  left: 0px; top: 0;
+
+  width: 200px; height: 200px;
+  backface-visibility: inherit;
+  opacity: 0.3;
+}
+
+/* Left Side */
+div:nth-child(1) {
+  transform: rotateY(0deg) translate3d(0, 0, 100px);
+background-color: red;
+}
+div:nth-child(2) {
+  transform: rotateY(90deg) translate3d(0, 0, 100px);
+  background-color: green;
+}
+div:nth-child(3) {
+  transform: rotateY(180deg) translate3d(0, 0, 100px);
+  background-color: blue;
+}
+div:nth-child(4) {
+  transform: rotateY(270deg) translate3d(0, 0, 100px);
+  background-color: yellow;
+}
+
+/* CoverSide */
+div:nth-child(5) {
+  transform: rotateX(90deg) translate3d(0, 0, 100px);
+  background-color: brown;
+}
+div:nth-child(6) {
+  transform: rotateX(270deg) translate3d(0, 0, 100px);
+  background-color: pink;
+}
