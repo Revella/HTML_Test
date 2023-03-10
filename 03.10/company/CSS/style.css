@@ -1,0 +1,224 @@
+/* 초기값 */
+* {
+  margin: 0; padding: 0;
+}
+ol, ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Header contants */
+header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+header #wrap {
+  position: relative;
+  width: 1180px; height: 120px;
+  margin: 0 auto;
+}
+#wrap h1 {
+  position: absolute;
+  left: 0;  bottom: 40px;
+}
+#wrap h1 > a {
+  color: #444;
+  font-weight: bold;
+}
+
+/* Gnb */
+.gnb {
+  position: absolute;
+  right: 0; bottom: 0;
+}
+.gnb > li {
+  float: left;
+}
+.gnb > li > a {
+  display: block;
+  padding: 20px 40px;
+  color: #555;
+  transition: all 0.5s;
+}
+.gnb > li > a:hover {
+  background-color: #555;
+  color: #fff;
+}
+/* lnb */
+.lnb {
+  position: absolute;
+  right: 30px; top: 20px;
+}
+.lnb > li {
+  float: left;
+}
+.lnb > li > a {
+  color: #999;
+  display: block;
+  padding: 0 10px;
+}
+
+/* Visual */
+figure {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-color: #000;
+
+  position: relative;
+  overflow: hidden;
+  padding-top: 250px;
+}
+figure video {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+
+  position: absolute;
+  top: 0; left: 0;
+}
+/* Visual > Font */
+.inner1 {
+  width: 1180px; 
+  margin: 0 auto;
+  position: relative;
+}
+h1 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+.inner1 p {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+.inner1 a {
+  display: block;
+  width: 400px; height: 40px;
+  
+  border: 1px solid #bbb;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+
+  transition: all 1.5s;
+}
+.inner1 a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Inner > News  */
+section {
+  width: 100%; 
+  padding: 200px 0;
+}
+.inner2 {
+  width: 1180px;
+  margin: 0 auto;
+}
+.inner2 h1 {
+  font-weight: bold;
+  color: #555;
+  font-size: 24px;
+
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* News > Content */
+.inner2 .content {
+  width: 100%;
+  overflow: hidden;
+}
+.content article {
+  width: 280px;
+  float: left;
+  margin-right: 20px;
+}
+.content article:last-child {
+  margin-right: 0;
+}
+.content h2 {
+  margin-bottom: 10px;
+}
+.content h2 a {
+  font-weight: bold;
+  color: #777;
+}
+.content p {
+  font-weight: 14px;
+  color: #777;
+}
+
+/* News > Img */
+.content .pic {
+  width: 100%; 
+  height: 120px;
+
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.content img {
+  object-fit: cover;
+  width: 100%; height: 100%;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #333;
+  padding: 100px 0;
+  border-top: 1px soild #888;
+}
+
+footer .inner3 {
+  width: 1180px;
+  margin: 0 auto;
+}
+/* Footer > Upper */
+.inner3 .upper {
+  width: 100%;
+  border-bottom: 1px solid #777;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+.inner3 h1 {
+  float: left;
+  font-weight: bold;
+  color: #666;
+}
+.inner3 ul {
+  float: right;
+}
+.inner3 li {
+  float: left;
+  margin-bottom: 20px;
+}
+.inner3 a {
+  color: #666;
+  font-weight: bold;
+}
+/* Footer > lower */
+.lower {
+  width: 100%;
+  font-size: 16px;
+  color: #777;
+  padding-top: 20px;
+}
+.lower address {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.lower p {
+  color: #777;
+  width: 100%;
+}
