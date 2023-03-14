@@ -1,0 +1,8 @@
+.container .preloading
+	.preloading-inner
+		img
+	.heading-preloading
+		h2.logo
+		p.slogan
+			span*3
+			

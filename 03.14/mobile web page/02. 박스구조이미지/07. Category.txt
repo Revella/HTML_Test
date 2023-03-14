@@ -1,0 +1,14 @@
+.container .Category
+	.category-inner
+		.main-header
+			[same html structure]
+			
+		.category-content
+			.category-acoordian
+				.title, .button * 5
+					ul.detail > (li > a) *5
+					
+		.gnb
+			[same html structure]
+			
+			
