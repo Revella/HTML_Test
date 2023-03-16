@@ -1,6 +1,6 @@
 /* Reset */
 * {
-  margin: 0;  padding: 0;
+  margin: 0; padding: 0;
   box-sizing: border-box;
 }
 li {
@@ -10,15 +10,15 @@ a {
   text-decoration: none;
 }
 
-/* Main style */
+/* Main */
 main {
-  width: 100%; 
+  width: 100%;
   height: 100vh;
   background-color: #333;
   display: flex;
 }
 main header {
-  width: 20%;  
+  width: 20%;
   height: 100%;
   padding: 10vh 5vw;
 
@@ -29,6 +29,7 @@ main header {
 
   position: relative;
   z-index: 3;
+  /* border: 10px solid pink; */
 }
 main section {
   width: 80%; height: 100%;
@@ -38,18 +39,18 @@ main section {
 
   position: relative;
   z-index: 1;
+  /* border: 10px solid yellow; */
 }
 main nav {
   position: absolute;
   top: 10vh; right: 5vw;
   z-index: 3;
-
   /* border: 10px solid aqua; */
 }
 
-/* Main > Header */
+/* Header */
 header h1 {
-  font-size: 0;
+  font-size: 0px;
   color: #fff;
 }
 h1 i {
@@ -68,7 +69,7 @@ header address {
   color: #888;
 }
 
-/* Main > nav */
+/* nav */
 nav ul {
   display: flex;
 }
@@ -78,7 +79,7 @@ nav a {
   margin-right: 30px;
 }
 
-/* Main > Section */
+/* Section Contents */
 main article {
   position: relative;
   flex: 1;
@@ -92,14 +93,14 @@ main article::before {
   content: "";
   display: block;
   width: 80%; height: 95%;
-  background-color: #444;
+  background: #444;
   position: absolute;
   top: 0; left: -200px;
   opacity: 0;
   transition: 1s;
 }
 main .inner {
-  width: 100%;  height: 100%;
+  width: 100%; height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -131,7 +132,7 @@ main p {
   color: #999;
 }
 
-/* Video Content */
+/* Videos Contents */
 main figure {
   width: 100%;
   height: 15vh;
@@ -151,7 +152,7 @@ main video {
   transform: scale(1.1);
 }
 
-/* Article : Hover */
+/*Article : Hover*/
 main article:hover {
   flex: 1.5;
   opacity: 1;
@@ -180,14 +181,13 @@ main article:hover figure {
 
 /* Aside */
 main aside {
-  width: 100%; 
+  width: 100%;
   height: 100vh;
   background-color: #222;
   position: absolute;
-  top: 0; left: -100;
-
+  top: 0; left: -100%;
   opacity: 0;
-  z-index: 4;
+  z-index: 2;
 
   box-sizing: border-box;
   padding: 20vh 7vw 14vh 20vw;
@@ -197,7 +197,7 @@ main aside {
 }
 main aside.on {
   opacity: 1;
-  left: 0;
+  left: 0%;
 }
 main aside .txt {
   width: 100%;
@@ -215,8 +215,8 @@ main aside .txt p {
   margin-bottom: 60px;
 }
 main aside .txt span {
-  cursor: pointer;
-  color: orange;
+cursor: pointer;
+color: orange;
 }
 main aside figure {
   width: 72%;
