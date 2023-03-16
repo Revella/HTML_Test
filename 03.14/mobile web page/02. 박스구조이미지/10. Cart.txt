@@ -1,0 +1,33 @@
+.container .cart
+	.cart-inner
+	
+		.main-header
+		[same html structure]
+	
+		.cart-content
+			.cart-items-header
+				h3, button.btn-all-clear
+			.cart-itmes
+				.cart-item
+					.cart-itme-title
+						input[type=checkbox], span, font-icon
+					.cart-itme-desc
+						.cart-itme-thum
+							img
+						.cart-itme-info
+							.delivery-date
+							.delivery-time
+							.total-price
+							.benefit
+								(span > font-icon) * 2 
+							select
+			.cart-itmes-summary
+				(div > span * 2) * 4
+			button.btn-order
+			ul.cart-notice
+				li * 3
+			
+		.gnb
+		[same html structure]
+			
+			

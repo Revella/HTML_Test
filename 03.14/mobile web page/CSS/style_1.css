@@ -5,14 +5,16 @@
 /* Common CSS */
 * {
   font-family: var(--primary-kr);
+  font-weight: 400;
 }
 body {
   margin: 0;
   color: var(--dark-black);
+  line-height: 1.5em;
   font-size: 14px;
 }
 .container {
-  width: 375px; 
+  width: 100%;
   position: relative;
 }
 [class*=content] {
@@ -27,35 +29,12 @@ body {
 
 /* Button CSS */
 .btn-primary {
+  width: 100%;
   font-size: 18px;
   border: none;
   border-radius: 5px;
   color: #fff;
-  width: 100%;
   padding: 8px;
-}
-
-/* Main Header CSS */
-.main-header {
-  height: 80px;
-  background-color: var(--crimson);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main-header .btn-back {
-  font-size: 22px;
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  flex: 1;
-}
-.logo {
-  font-size: 26px;
-  margin: 0;
-  text-align: center;
-  color: #fff;
-  flex: 6;
 }
 
 /* Gnb CSS */
@@ -70,15 +49,17 @@ body {
   background-color: #fff;
 }
 .gnb a {
-  color: var(--dark-black);
   text-align: center;
-  display: flex;
   flex: 1;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .gnb a .bi {
   font-size: 22px;
+}
+.gnb a:nth-child(1) .bi, .gnb a:nth-child(4) .bi {
+  font-size: 26px;
 }
 .gnb a span {
   display: block;
@@ -100,20 +81,20 @@ body {
 .cart-alarm b em,
 .user-alarm span em {
   position: absolute;
+  right: 0; top: 0;
+  
   width: 15px;
   height: 15px;
   background-color: var(--royalblue);
   border-radius: 50%;
-  right: 0;
-  top: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .cart-alarm b em {
   color: #fff;
-  top: 0;
-  right: -3px;
+  top: 0;right: -3px;
 }
 .cart-alarm b em::before,
 .user-alarm span em::before {
@@ -121,31 +102,6 @@ body {
   font-style: normal;
   font-size: 10px;
   font-family: var(--primary-en);
-}
-
-/* ### Preloading HTML ### */
-.preloading {
-  height: 100vh;
-}
-.preloading-inner {
-  height: inherit;
-  background: url('/Imgs/01-Preloading-01.jpg') no-repeat -110px center;
-  background-size: cover;
-}
-.heading-preloading {
-  position: absolute;
-  top: 150px; left: 30px;
-}
-.heading-preloading .logo {
-  font-size: 32px;
-  color: var(--crimson);
-}
-.slogan span {
-  display: block;
-  font-family: var(--secondary-kr);
-  font-weight: bold;
-  margin-top: 14px;
-  font-size: 28px;
 }
 
 /* ### Signin HTML ### */
@@ -156,37 +112,31 @@ body {
   background: url('/Imgs/02-Login-01.jpg') no-repeat;
   height: 250px;
 }
-/* Signin Header */
-.signin-header{
+.signin-header {
   text-align: center;
 }
 .signin-header .logo {
   font-size: 26px;
-  margin-bottom: 0;
-}
-.signin-header .maintitle {
-  color: var(--dark-black);
+  margin: 10px 0;
 }
 .signin-header p {
   font-size: 16px;
   font-weight: 400;
 }
-/* Signin Input */
 .input-field input {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 5px 0;
-  padding: 10px 20px;
-
   border: 1px solid var(--coludy-gray);
+  padding: 10px 20px;
+  width: 100%;
   border-radius: 30px;
+  margin: 5px 0;
+  box-sizing: border-box;
 }
 .input-field input:focus {
   outline: none;
   border-color: var(--yellowgreen);
 }
 .input-field input::placeholder {
-  color: var(--light-black);
+  color: var(--light-gray);
   transition: 0.35s;
 }
 .input-field input:focus::placeholder {
@@ -198,21 +148,22 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.custom-chk input[type=checkbox] {
+.custom-chk label input[type=checkbox] {
   display: none;
+  
 }
-.custom-chk input[type=checkbox] + em {
-  width: 16px; height: 16px;
-  display: inline-block;
-  transform: translateY(5px);
+.custom-chk label input[type=checkbox] + em {
+  width: 16px; 
+  height: 16px;
+  display: inline-block;  
+  transform: translateY(2px);
   margin-right: 3px;
 }
-.custom-chk input[type=checkbox] + em::before {
+.custom-chk label input[type=checkbox] + em::before {
   content: '\F26B';
   font-family: bootstrap-icons;
   font-style: normal;
   color: var(--light-gray);
-  transform: translateY(-3px);
   display: inline-block;
 }
 .custom-chk label input[type=checkbox]:checked + em::before {
@@ -233,14 +184,12 @@ body {
 }
 .easy-signin span {
   color: var(--light-gray);
-  display: inline-block;
-  margin-bottom: 10px;
 }
 .social-btn {
   margin: 10px 0;
 }
 .social-btn a {
-  margin: 3px;
+  margin: 3px ;
 }
 
 /* ### Signup HTML ### */
@@ -309,46 +258,4 @@ body {
 .birth div > *:focus::placeholder,
 .phone div input:focus::placeholder {
   visibility: hidden;
-}
-
-/* === Category HTML === */
-.category-accordian {
-  font-size: 16px;
-}
-.category-accordian .title {
-  border-bottom: 1px solid var(--coludy-gray);
-  height: 50px;
-  display: flex;
-  align-items: center;
-
-  color: var(--crimson);
-  font-weight: 400;
-  position: relative;
-  padding: 0 20px;
-}
-.category-accordian .title::after {
-  content: '\F282';
-  font-family: bootstrap-icons;
-  background-color: var(--lightpink);
-  width: 20px; height: 20px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 13px;
-  position: absolute;
-  right: 20px;
-  transition: 0.35s;
-}
-.category-accordian .active::after {
-  background-color: transparent;
-  transform: rotateX(180deg);
-}
-.category-accordian .detail {
-  display: none;
-  line-height: 2em;
-  padding: 7px 20px;
-  background-color: var(--snow);
-}
-.category-accordian .detail a {
-  display: block;
-  padding: 2px 0;
 }

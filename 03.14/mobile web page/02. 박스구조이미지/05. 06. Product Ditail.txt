@@ -1,0 +1,57 @@
+.container .Products-detail
+	.product-detail-inner
+
+		.product-detail-header
+			.back-logo
+				button.btn-back > font-icon
+				h2.logo
+			.navigator
+				button.user-search > font-icon
+				button.user-home > font-icon
+				button.user-usercart > font-icon
+		.product-detail-contant
+			.product-detail-silder-outer
+				.product-detail-silder
+					a > img
+			.product-info
+				.product-rating
+					.stars
+						font-icon * 5, span
+				.product-badge
+					.badge.new
+					.badge.hot
+				.product-title
+					h3
+					div
+						span, s, b
+				.product-delivery-info
+					span,  div > span *	3
+			.product-detail
+				[nomal html structure]
+			.product-accordian
+				.title
+				.detail
+				.title
+				.detail
+				.title
+				.detail
+				.title
+				.detail
+
+		.product-detail-order-info
+			.products-order-choice
+				.wish
+				button.btn-order-choice
+
+			.product-order-final
+				.products-order-final-info
+					.badge.arrival
+					.product-title
+						[same html structure]
+				.payment-benefit
+					b
+					span > a
+				.product-order-btns
+					button.btn-cart
+					button.btn-now-order
+
