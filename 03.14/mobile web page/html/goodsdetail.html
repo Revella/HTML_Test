@@ -20,8 +20,8 @@
     <div class="goods-detail-inner">
       <div class="goods-detail-header">
         <div class="back-logo">
-          <button class="btn-back"><i class="bi bi-chevron-compact-left"></i></button>
-          <h2 class="logo">Today's meal kit</h2>
+          <button class="btn-back" onclick="history.back()"><i class="bi bi-chevron-compact-left"></i></button>
+          <h2 class="logo" onclick="location.href='/html/main.html'">Today's meal kit</h2>
         </div>
         <div class="navigater">
           <button class="btn-search"><i class="bi bi-search"></i></button>
@@ -87,6 +87,58 @@
           <p>
             오늘 메뉴는 아이들이 좋아하는 오징어 토마토 스파게티를 만들어주세요! 입에서 살살 녹는 Today's Meal kit 토마토 오징어 스파게티
           </p>
+        </div>
+        <div class="goods-accordion">
+          <div class="title active">상품후기</div>
+          <div class="detail">
+            <img src="/Imgs/goods-detail-accordion-content-01.png" alt=""></div>
+          <div class="title">상품문의</div>
+          <div class="detail">
+            <img src="/Imgs/goods-detail-accordion-content-02.png" alt=""></div>
+          <div class="title">배송안내</div>
+          <div class="detail">
+            <img src="/Imgs/goods-detail-accordion-content-03.png" alt=""></div>
+          <div class="title">교환 및 반품안내</div>
+          <div class="detail">
+            <img src="/Imgs/goods-detail-accordion-content-04.png" alt=""></div>
+        </div>
+      </div>
+      <div class="overlay-fold"></div>
+      <div class="goods-order-info">
+        <div class="goods-order-choice">
+          <span class="wish"></span>
+          <button class="btn-primary btn-order-choice">구매하기</button>
+        </div>
+        <div class="goods-order-final">
+          <button class="btn-fold"><i class="bi bi-chevron-down"></i></button>
+          <div class="goods-order-final-info">
+            <span class="info-badge arrival">내일도착</span>
+            <div class="goods-title">
+              <h3>바다향 가득! 해산물 씨키트 해물 스파게티 밀키트 (2인) 1300g</h3>
+              <div>
+                <span>30%</span>
+                <b>11,760원</b>
+                <s>16,800원</s>
+                <div class="custom-select">
+                  <select>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-benefit">
+            <b>결제 혜택</b>
+            <p>하나카드 5만원 결제 시, 최대 8개월 무이자 할부, PAYCO 생애 첫 결제시 2,000원 즉시 할인<br /> <a href="#">더보기</a></p>
+          </div>
+          <div class="good-order-btns">
+            <button class="btn-primary btn-cart">장바구니 담기</button>
+            <button class="btn-primary btn-now-order">바로구매</button>
+          </div>
         </div>
       </div>
     </div>

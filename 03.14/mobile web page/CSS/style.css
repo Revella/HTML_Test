@@ -12,7 +12,7 @@ body {
   font-size: 14px;
 }
 .container {
-  width: 375px; 
+  width: 100%; 
   position: relative;
 }
 [class*=content] {
@@ -54,7 +54,7 @@ body {
 }
 
 /* Main Header CSS */
-.main-header {
+.main-header-include .main-header {
   height: 80px;
   background-color: var(--crimson);
   display: flex;
@@ -101,6 +101,14 @@ body {
 .gnb a span {
   display: block;
   font-size: 13px;
+}
+/* GNB Navigation Check CSS */
+.category .gnb a:nth-child(1),
+.search .gnb a:nth-child(2), 
+.front .gnb a:nth-child(3),
+.mypage .gnb a:nth-child(4),
+.cart .gnb a:nth-child(5){
+  color: var(--crimson);
 }
 
 /* Counter CSS */
@@ -396,12 +404,12 @@ body {
   color: var(--dark-gray);
 }
 .goods-suggestion-items {
-  width: 430px;
+  width: calc(var(--slide-basis) * 1.15);
   margin-bottom: 15px;
 }
 .goods-suggestion-item .thum {
-  width: 135px;
-  height: 180px;
+  width: calc(var(--slide-basis) * 0.36) ;
+  height: calc(var(--slide-basis) * 0.48) ;
 }
 .goods-suggestion-item .thum img {
   width: inherit;
@@ -778,6 +786,127 @@ input[id=food-type-tab5]:checked ~ .food-type-tabs .tab5 {
   display: block;
   padding: 2px 0;
 }
+/* Goods Accordion */
+.goods-accordion {
+  margin-bottom: 100px;
+}
+.goods-accordion .title {
+  border-bottom: 1px solid var(--coludy-gray);
+  height: 40px;
+  font-weight: 600;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.goods-accordion .title::after {
+  content: '\F64D';
+  font-family: bootstrap-icons;
+  position: absolute;
+  right: 20px;
+}
+.goods-accordion .title.active {
+  color: var(--crimson);
+}
+.goods-accordion .title.active::after {
+  content: '\F63B';
+  font-family: bootstrap-icons;
+}
+.goods-accordion .detail {
+  display: none;
+}
+.goods-accordion .detail img {
+  width: 100%;
+}
+/* Goods Order Info */
+.goods-order-info {
+  background-color: #fff;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px 10px 0 0 ;
+
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.goods-order-choice {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.goods-order-choice .wish {
+  font-size: 26px;
+  transform: translateY(-6px);
+}
+.btn-order-choice {
+  background-color: var(--royalblue);
+}
+.goods-order-final {
+  display: none;
+  z-index: 1000;
+}
+.goods-order-final-info .goods-title{
+  margin: 20px 0;
+}
+.goods-order-final-info .goods-title h3 {
+  font-size: 16px;
+}
+.goods-order-final-info .goods-title > div {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.info-badge {
+  background-color: #fff;
+  display: inline-block;
+  width: 80px;
+  padding: 3p;
+  text-align: center;
+  border-radius: 30px;
+  color: var(--crimson);
+  border: 1px solid var(--crimson);
+}
+.btn-fold {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 5px; left: 50%;
+  transform: translateX(-50%);
+}
+.overlay-fold {
+  display: none;
+  width: 375px;
+  height: 100vh;
+  position: fixed;
+  top: 0; 
+  left: 0;
+}
+.payment-benefit {
+  font-size: 13px;
+  margin: 20px 0;
+}
+.payment-benefit b {
+  font-weight: 600;
+}
+.payment-benefit p {
+  color: var(--light-gray);
+}
+.payment-benefit a {
+  text-decoration: underline;
+}
+.good-order-btns {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.btn-cart {
+  border: 1px solid var(--royalblue);
+  background-color: #fff;
+  color: var(--royalblue);
+}
+.btn-now-order {
+  background-color: var(--royalblue);
+}
 
 /* ### Search HTML ### */
 .search-field input {
@@ -1094,7 +1223,7 @@ input[id=food-type-tab5]:checked ~ .food-type-tabs .tab5 {
   appearance: none;
   padding: 3px;
   background-size: 18px; */
-.cart-item-info .custom-select {
+.custom-select {
   border: 1px solid var(--coludy-gray);
   background-color: var(--snow);
 
@@ -1103,7 +1232,7 @@ input[id=food-type-tab5]:checked ~ .food-type-tabs .tab5 {
   width: 70px; height: 30px;
   position: relative;
 }
-.cart-item-info .custom-select select {
+.custom-select select {
   appearance: none;
   border: none;
   background-color: transparent;
@@ -1111,7 +1240,7 @@ input[id=food-type-tab5]:checked ~ .food-type-tabs .tab5 {
   width: 100%;
   padding-left: 16px;
 }
-.cart-item-info .custom-select::after {
+.custom-select::after {
   content: '\F282';
   font-family: bootstrap-icons;
   font-size: 12px;
