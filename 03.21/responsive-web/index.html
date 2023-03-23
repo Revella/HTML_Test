@@ -31,14 +31,25 @@
 	<title>Resposive Web Page</title>
 </head>
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
-<body data-hijacking="on" data-animation="rotate">
+<body data-hijacking="on" data-animation="gallery">
 
 	<!-- Main Container -->
 	<div class="container">
 		<section class="cd-section visible" id="home">
 			<div>
 				<div class="content">
-					<img src="/images/temp-section-01.jpg" alt="">
+					<div class="home-inner">
+						<h3 class="wellcom-text">
+							You can do it!
+							<span>with GMA LAB <i class="fa-sharp fa-solid fa-cat"></i></span>
+						</h3>
+						<div class="opacity-image"></div>
+						<div class="home-heading">
+							<span>Creative</span>
+							<span>Architecture</span>
+							<span>Specialist</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -73,12 +84,11 @@
 				</div>
 			</div>
 		</section>	
-
 		<section class="cd-section" id="project">
 			<div>
 				<div class="content">
 					<div class="project-inner">
-						<input type="radio" name="tabmenu" id="tab1" />
+						<input type="radio" name="tabmenu" id="tab1" checked />
 						<input type="radio" name="tabmenu" id="tab2" />
 						<input type="radio" name="tabmenu" id="tab3" />
 						<div class="tabs">
@@ -115,12 +125,82 @@
 									<img src="/images/project-main-01-04.jpg" />
 								</div>
 							</div>
+							<div class="tab">
+								<div class="project-info" data-text="02">
+									<h3>Project : Glass Wall Architectur</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, corrupti! Libero, minima? Alias iusto laborum, atque recusandae magni optio. Doloribus reiciendis, inventore at est qui eum sit unde. Itaque, impedit.
+									</p>
+									<ul>
+										<li><b>Area</b> : 1670 m2</li>
+										<li><b>Completed Date</b> : September 2022</li>
+										<li><b>Architect</b> : David Park</li>
+									</ul>
+									<div class="detail">
+										<div>
+											<span>225</span> WORKING DAY
+										</div>
+										<div>
+											<span>320</span> 	MEMBERS
+										</div>
+										<div>
+											<span>3M</span> BUDGET
+										</div>
+									</div>
+									<a class="view-project" href="#">
+										View project <i class="fa-solid fa-arrow-right"></i>
+									</a>
+								</div>
+								<div class="project-photo">
+									<img src="/images/project-main-02-01.jpg" />
+									<img src="/images/project-main-02-02.jpg" />
+									<img src="/images/project-main-02-03.jpg" />
+									<img src="/images/project-main-02-04.jpg" />
+								</div>
+							</div>
+							<div class="tab">
+								<div class="project-info" data-text="03">
+									<h3>Project : Glass Wall Architectur</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, corrupti! Libero, minima? Alias iusto laborum, atque recusandae magni optio. Doloribus reiciendis, inventore at est qui eum sit unde. Itaque, impedit.
+									</p>
+									<ul>
+										<li><b>Area</b> : 1670 m2</li>
+										<li><b>Completed Date</b> : September 2022</li>
+										<li><b>Architect</b> : David Park</li>
+									</ul>
+									<div class="detail">
+										<div>
+											<span>225</span> WORKING DAY
+										</div>
+										<div>
+											<span>320</span> 	MEMBERS
+										</div>
+										<div>
+											<span>3M</span> BUDGET
+										</div>
+									</div>
+									<a class="view-project" href="#">
+										View project <i class="fa-solid fa-arrow-right"></i>
+									</a>
+								</div>
+								<div class="project-photo">
+									<img src="/images/project-main-03-01.jpg" />
+									<img src="/images/project-main-03-02.jpg" />
+									<img src="/images/project-main-03-03.jpg" />
+									<img src="/images/project-main-03-04.jpg" />
+								</div>
+							</div>
+						</div>
+						<div class="btn">
+							<label for="tab1"></label>
+							<label for="tab2"></label>
+							<label for="tab3"></label>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>	
-
 		<section class="cd-section" id=plan>
 			<div>
 				<div class="content">
@@ -287,7 +367,7 @@
 									<label for="subject">Subject <span>*</span></label>
 									<input type="text" id="subject">
 									<label for="message"> Message <span>*</span></label>
-									<textarea id="message" cols="30" rows="10"     style="resize: none;"></textarea>
+									<textarea id="message" cols="30" rows="20"     style="resize: none;"></textarea>
 									<button>Send Message</button>
 								</form>
 							</div>
