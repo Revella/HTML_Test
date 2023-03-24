@@ -199,7 +199,6 @@ header {
 
 /* #### About Page #### */
 .about-inner {
-  /* background-color: #0dace3; */
   background: #0dace3 url('/images/line-drawing.png') no-repeat right bottom;
   height: 100%;
 }
@@ -213,7 +212,7 @@ header {
 }
 .item {
   overflow: hidden;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 }
 .item:hover h3 {
   color: #000;
@@ -802,8 +801,8 @@ hr.bar {
   color: #bbb;
 
   position: absolute;
-  top: -60px;
-  left: -20px;
+  top: -30px;
+  left: -38px;
 }
 .hiring-contact ul {
   display: inline-block;

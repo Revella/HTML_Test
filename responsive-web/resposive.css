@@ -111,6 +111,216 @@
   .gototop.active {
     opacity: 1;
   }
-
   
+  /* Show Hide Section */
+  #home,
+  #about, 
+  #project,
+  #plan,
+  #awards,
+  #contact,
+  #location {
+    display: block;
+  }
+  /* #### Home Page #### */
+  .home-inner {
+    height: 100vh;
+  }
+  .home-heading {
+    left: 20px;
+  }
+  .home-heading span {
+    font-size: 50px;
+  }
+
+  /* #### About Page #### */
+  .about-inner {
+    background-color: #0dace3;
+    height: auto;
+  }
+  .about-items {
+    width: 100%;
+    position: static;
+    color: #fff;
+    text-align: center;
+    transform: none;
+    margin-left: 0;
+  }
+  .item img {
+    float: none;
+    margin-top: 20px;
+  }
+
+  /* #### Project Page #### */
+  .project-inner {
+    height: auto;
+    width: 100%;
+    border: none;
+  }
+  .tab {
+    float: none;
+  }
+  .tab .project-info {
+    width: 100%;
+    float: none;
+  }
+  .tab .project-photo {
+    width: 100%;
+    float: none;
+  }
+  .view-project {
+    width: 100%;
+  }
+  .project-info {
+    padding: 20px;
+    float: none;
+  }
+  .project-info p {
+    position: relative;
+  }
+  .detail div {
+    font-size: 13px;
+  }
+  .btn {
+    width: 100%;
+    bottom: 10px;
+  }
+
+  /* #### Plan Page #### */
+  .plan-inner {
+    height: auto;
+    padding: 20px;
+  }
+  .plan-feature {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+  .plan-feature > div {
+    height: auto;
+  }
+  .plan-info {
+    margin-bottom: 40px;
+  }
+  .plan-info > div {
+    float: none;
+    width: 100%;
+  }
+  .plan-photo img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* #### Awards Page #### */
+  .awards-inner {
+    height: auto;
+  }
+  .awards-inner > div {
+    float: none;
+    width: 100%;
+  }
+  .about-heading, .victory-jump img {
+    position: static;
+    transform: none;
+    padding: 40px 20px;
+  }
+  .about-heading {
+    width: 100%;
+  }
+  .victory-jump {
+    text-align: center;
+  }
+  /* #### Location Page #### */
+  .location-inner {
+    height: auto;
+  }
+  .location-feature {
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 30px;
+    transform: none;
+  }
+  .location-feature > div {
+    float: none;
+    width: 100%;
+    padding: 20px;
+  }
+  /* #### Contact Page #### */
+  .contact-inner {
+    height: auto;
+  }
+  .contact-feature {
+    width: 100%; 
+    position: static;
+    transform: none;
+    margin-left: 10px;
+  }
+  .contact-feature > div {
+    float: none;
+    width: 100%;
+  }
+ /* === Sub page : Hiring Page === */
+  .hiring-main {
+    height: 400px;
+  }
+  .hiring-heading {
+    width: 100%;
+    top: 70%
+  }
+  .hiring-heading h1 {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  .hiring-info {
+    padding: 20px;
+  }
+  .hiring-info > div {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .center-child {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+  .center-child p {
+    width: 100%;
+  }
+  .hiring-slogan {
+    padding: 50px 0;
+  }
+  .hiring-slogan p {
+    font-size: 22px;
+  }
+  .hiring-slogan p::before {
+    top: -40px;
+    left: -25px;
+  }
+  .hiring-contact ul {
+    display: block;
+    width: 100%;
+  }
+  .sns {
+    text-align: center;
+  }
+  .sns a {
+    margin: 0 8px;
+  }
+
+  /* featherlight mobile CSS */
+  .featherlight .featherlight-close-icon {
+    font-size: 25px;
+    top: 36px;
+    right: 20px;
+  }
+
+  /* === Sub page : Project Page === */
+  .center-child h2 {
+    font-size: 28px;
+  }
+  .photo.project-info {
+    padding-top: 40px;
+  }
 }
