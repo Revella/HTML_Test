@@ -22,9 +22,9 @@
   --color-dark : #2f4858;
   --color-emph : #f10f5f;
   --color-text : #281812;
-  --color-lighter : #dc9c86;
-  --color-light-bd : #ffe6d6;
-  --color-light-bg : #ff5fed;
+  --color-lighter : #ff5fed;
+  --color-light-bd : #dc9c86;
+  --color-light-bg : #ffe6d6;
 
   --font-size-title: 44px;
   --font-size-subtitle: 32px;
@@ -47,4 +47,18 @@ ul, li {
 }
 a {
   text-decoration: none;
+}
+/* Comeon CSS */
+.section {
+  padding: 64px 16px;
+  text-align: center;
+}
+.section_tag {
+  color: var(--color-sub);
+  font-size: var(--font-size-tag);
+}
+.section_title {
+  color: var(--color-text);
+  font-weight: bold;
+  font-size: var(--font-size-title);
 }
