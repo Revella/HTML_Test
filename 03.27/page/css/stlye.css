@@ -171,8 +171,14 @@ color: #333;
 .slider .slider-pic {
   display: inline-block;
   width: 50%;
-  margin: 5px 20px;
   overflow: hidden;
+}
+.slick-slider a {
+  display: inline-block;
+}
+.slider-pic img {
+  display: inline-block;
+  text-align: center;
 }
 .slick-prev:before, .slick-next:before {
   font-family: 'slick';
@@ -180,5 +186,4 @@ color: #333;
   line-height: 1;
   opacity: 0.75;
   color: #777;
-  -webkit-font-smoothing: antialiased;
 }
