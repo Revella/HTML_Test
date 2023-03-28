@@ -59,13 +59,11 @@ header {
 .main-nav-btn label {
   margin-left: 40px;
 }
-input[id=tab1]:checked ~ .main-nav-btn label[for=tab1],
-input[id=tab2]:checked ~ .main-nav-btn label[for=tab2],
-input[id=tab3]:checked ~ .main-nav-btn label[for=tab3] {
-color: #333;
-}
 .main-nav-btn label:hover {
   color: #333;
+}
+.main-nav-inner input[id="tab1"]:Checked ~ .main-nav-btn label[for="tab1"] {
+color: #000;
 }
 
 /* Main page*/
@@ -83,7 +81,7 @@ color: #333;
   transform: translateY(-50%);
   color: #333;
 
-  animation: Font 2s both;
+  animation: Font 2s ease-in both;
 }
 .main-text h3 {
   font-size: 4.5em;
@@ -103,7 +101,7 @@ color: #333;
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: #f5f3ff;
+  background: linear-gradient(180deg, rgba(245,243,255,0.4) 0%, rgb(208, 192, 228) 100%);
 }
 .about-inner .main-bg {
   opacity: 0.5;
@@ -162,6 +160,7 @@ color: #333;
 }
 .slick-slider {
   width: 70%;
+  height: 820px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -177,18 +176,24 @@ color: #333;
 .slider h4 {
   font-size: 30px;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .slider .slider-pic {
   display: inline-block;
-  width: 50%;
+  width: 100%;
+  height: 650px;
   overflow: hidden;
+}
+.slider .text {
+  height: 150px;
 }
 .slick-slider a {
   display: inline-block;
 }
-.slider-pic img {
+.slider .slider-pic img {
   display: inline-block;
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
 .slick-prev:before, .slick-next:before {
