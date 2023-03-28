@@ -59,9 +59,9 @@ header {
 .main-nav-btn label {
   margin-left: 40px;
 }
-input[id=tabs1]:checked + .main-nav-btn label[for=tabs1],
-input[id=tabs2]:checked + .main-nav-btn label[for=tabs2],
-input[id=tabs3]:checked + .main-nav-btn label[for=tabs3] {
+input[id=tab1]:checked ~ .main-nav-btn label[for=tab1],
+input[id=tab2]:checked ~ .main-nav-btn label[for=tab2],
+input[id=tab3]:checked ~ .main-nav-btn label[for=tab3] {
 color: #333;
 }
 .main-nav-btn label:hover {
@@ -82,11 +82,22 @@ color: #333;
   left: 25%;
   transform: translateY(-50%);
   color: #333;
+
+  animation: Font 2s both;
 }
 .main-text h3 {
   font-size: 4.5em;
-}
+} 
 
+/* Animation */
+@keyframes Font {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* about page */
 .about-inner {
   width: 100%;
