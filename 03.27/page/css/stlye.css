@@ -1,6 +1,6 @@
 /* Font Custom */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 
 /* Reset */
 * {
@@ -226,7 +226,7 @@ color: #333;
   right: 35px;
   border-radius: 25px;
   z-index: 2;
-  transition: 0.75s;
+  transition: 0.5s;
 }
 .bt_btn:hover {
   width:  150px;
@@ -244,10 +244,133 @@ color: #333;
   position: absolute;
   top: 10px;
   left: 14.5px;
+
 }
 .bt_btn:hover i::after {
-  content: 'Click';
+  content: 'Q & A';
   font-size: 20px;
-  margin-left: 8px;
+  margin-left: 12px;
   letter-spacing: 5px;
+  animation: text_left 2s 0.7s 0.5s both;
+}
+@keyframes text_left {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* hiring */
+.hiring-main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Nanum Gothic', sans-serif;;
+}
+.hiring-nav {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.hiring-nav span {
+  margin-left: 40px;
+  font-weight: 800;
+  color: #1E8894
+}
+.hiring-inner {
+  width: 50%;
+  position: absolute;
+  top: 50%; left: 64%;
+  transform: translate(-50%, -50%);
+}
+.hiring-inner .q_a {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #1E8894;
+}
+.q_a input {
+  width: 450px;
+  height: 30px;
+  margin-left: 5px;
+  padding-left: 10px;
+  color: #1E8894;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.q_a input:hover,
+.q_a textarea:hover {
+  outline: 2px solid #1E8894;
+}
+.q_a textarea {
+  width: 520px;
+  height: 250px;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 10px;
+  color: #1E8894;
+}
+.q_a input[type="submit"] {
+  width: 512px; 
+  background-color: #1E8894;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.q_a input[type="submit"]:hover {
+  background-color: #43CFE0;
+  outline: none;
+}
+.hiring-bg {
+  width: inherit;
+  height: inherit;
+  background: url('/img/hiring-bg.png') no-repeat center center;
+  background-size: cover;
+}
+
+/* Featherlight  */
+.featherlight .featherlight-content {
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  display: inline-block;
+  overflow: auto;
+  max-height: 95%;
+  background: #fff;
+  cursor: auto;
+  white-space: normal;
+  width: 55%;
+  height: 60%;
+
+}
+.featherlight .featherlight-inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.featherlight .featherlight-close-icon {
+  position: absolute;
+  z-index: 9999;
+  top: 6px;
+  right: 15px;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #333;
 }
