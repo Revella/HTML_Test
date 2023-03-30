@@ -1,0 +1,188 @@
+/* Reset */
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul, ol, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Main Bg */
+section {
+  background-color: #fff;
+  width: 340px; 
+
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+
+  margin: 50px auto;
+  padding: 30px;
+}
+
+/* Menu */
+.menu {
+  width: 100%;
+  overflow: hidden;
+}
+.menu a:nth-child(1) {
+  float: left;  
+}
+.menu a:nth-child(2) {
+  float: right;
+}
+.menu a {
+  color: #666;
+  font-size: 20px;
+}
+
+/* Profile */
+.profile {
+  width: 100%;
+  text-align: center;
+}
+.profile img {
+  width: 200px;
+  border-radius: 50%;
+
+  margin-bottom: 20px;
+}
+/* Profile > Font */
+.profile h1 {
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-style: 22px;
+}
+.profile h2 {
+  color: #bbb;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 12px;
+}
+/* Profile > Button */
+.btn-view {
+  display: block;
+  border-radius: 16px;
+  
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  line-height: 32px;
+
+  width: 180px;
+  margin: 0 auto;
+}
+
+/* Info */
+.contact {
+  margin: 20px 0;
+}
+.contact li {
+  width: 100%;
+  padding: 0 10px;
+  border-bottom: 1px solid #eee;
+}
+.contact li:last-child {
+  border-bottom: none;
+}
+li i {
+  width: 25%;
+  margin-left: 10px;
+  color: #555;
+
+  text-align: center;
+  font-size: 15px;
+  text-shadow: 2px 2px 2px #ddd;
+}
+li span {
+  color: #555;
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* Footer */
+.others {
+  width: 100%;
+  text-align: center;
+}
+.others a {
+  display: inline-block;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  opacity: 0.4;
+  filter: saturate(0.7);
+}
+.others a.on {
+  opacity: 1;
+  filter: saturate(1);
+}
+.others a:nth-of-type(1) {
+  background-color: #35e0f7;
+  box-shadow: 5px 5px 10px rgba(74, 255, 255, 0.7);
+}
+.others a:nth-of-type(2) {
+  background-color: #55f5cd;
+  box-shadow: 5px 5px 10px rgba(85, 245, 178, 0.7);
+}
+.others a:nth-of-type(3) {
+  background-color: #ff80df;
+  box-shadow: 5px 5px 10px rgba(255, 120, 273, 0.7);
+}
+.others a:nth-of-type(4) {
+  background-color: #a794fd;
+  box-shadow: 5px 5px 10px rgba(167, 148, 253, 0.7);
+}
+
+/* Memeber style */
+
+/* ====Memeber 1 ==== */
+body.member1{
+  background-color: #2ffaff;
+}
+.member1 .profile img {
+  box-shadow: 5px 15px 30px rgba(173, 216, 230, 0.8);
+}
+.member1 .btn-view {
+  background: linear-gradient(45deg, #4affff, #35e0f7);
+  box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.4);
+}
+/* ====Memeber 2 ==== */
+body.member2{
+  background-color: #55f5cd;
+}
+.member2 .profile img {
+  box-shadow: 5px 15px 30px rgba(78, 221, 186, 0.8);
+}
+.member2 .btn-view {
+  background: linear-gradient(45deg, #4EDEBA, #45C4A4);
+  box-shadow: 5px 10px 20px rgba(82, 235, 196, 0.4);
+}
+/* ====Memeber 3 ==== */
+body.member3{
+  background-color: #E2A3F5;
+}
+.member3 .profile img {
+  box-shadow: 5px 15px 30px rgba(219, 159, 237, 0.8);
+}
+.member3 .btn-view {
+  background: linear-gradient(45deg, #E2A3F5, #B584C4);
+  box-shadow: 5px 10px 20px rgba(217, 157, 255, 0.4);
+}
+/* ====Memeber 4 ==== */
+body.member4{
+  background-color: #A7A6FD;
+}
+.member4 .profile img {
+  box-shadow: 5px 15px 30px rgba(217, 178, 242, 0.8);
+}
+
+.member4 .btn-view {
+  background: linear-gradient(45deg, #ac9df0, #8172C4);
+  box-shadow: 5px 10px 20px rgba(172, 175, 240, 0.4);
+}
