@@ -4,7 +4,7 @@
 @import url('/css/3.main.css');
 @import url('/css/4.about.css');
 @import url('/css/5.html.css');
-@import url('/css/6.curiculum.css');
+@import url('/css/6.curriculum.css');
 @import url('/css/7.contact.css');
 @import url('/css/8.footer.css');
 
@@ -22,9 +22,9 @@
   --color-dark : #2f4858;
   --color-emph : #f10f5f;
   --color-text : #281812;
-  --color-lighter : #ff5fed;
-  --color-light-bd : #dc9c86;
-  --color-light-bg : #ffe6d6;
+  --color-lighter : #dc9c86;
+  --color-light-bd : #ffe6d6;
+  --color-light-bg : #fff5ed;
 
   --font-size-title: 44px;
   --font-size-subtitle: 32px;
