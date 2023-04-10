@@ -17,17 +17,17 @@ for(let el of lists) {
   let load = el.querySelector(".load");
 
   play.addEventListener("click", e=>{
-    e.currentTarget.closest("article").querySelector(".pic").classList.add('on');
+    e.currentTarget.closest("article").querySelector(".pic").classList.add("on");
     e.currentTarget.closest("article").querySelector("audio").play();
   }) 
 
   pause.addEventListener("click", e=> {
-    e.currentTarget.closest("article").querySelector("pic").classList.remove("on");
+    e.currentTarget.closest("article").querySelector(".pic").classList.remove("on");
     e.currentTarget.closest("article").querySelector("audio").pause();
   })
 
   load.addEventListener("click", e=> {
-    e.currentTarget.closest("article").querySelector("pic").classList.add("on");
+    e.currentTarget.closest("article").querySelector(".pic").classList.add("on");
     e.currentTarget.closest("article").querySelector("audio").load();
     e.currentTarget.closest("article").querySelector("audio").play();
   })
@@ -41,12 +41,13 @@ let num = 0
 prev.addEventListener("click", ()=> {
   num++;
   frame.style.transform = `rotate(${deg * num}deg)`;
-  (active==0 ? active == len : active == activation(active, lists));
+
+  (active = 0 ? active == len : active == activation(active, lists));
 })
 next.addEventListener("click", ()=> {
   num--;
-  next.style.transform = `rotate(${deg * num}deg)`;
-  (active==0 ? active == len : active == activation(active, lists));  
+  frame.style.transform = `rotate(${deg * num}deg)`;
+  (active = 0 ? active == len : active == activation(active, lists));  
 });
 
 let active = 0

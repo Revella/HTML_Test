@@ -149,7 +149,6 @@ figure section article .inner .pic {
   margin: 0px auto;
   border-radius: 50%;
   background-repeat: no-repeat;
-  /* background-position: ; */
   position: relative;
   display: flex;
   justify-content: center;
@@ -187,6 +186,15 @@ figure section article .inner .pic.on::after {
     transform: rotate(360deg);
   }
 }
+@keyframes ani2 {
+  0% {
+    transform: translateY(10%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(10%) rotate(360deg);
+  }
+}
+
 /* Prev & next Button */
 /* ==== Preve Button ==== */
 figure .btnprev {
