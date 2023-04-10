@@ -1,0 +1,29 @@
+/* Font icon */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+
+:root {
+  /* Font family */
+  --primary-kr: 'Nanum Gothic', sans-serif;
+  --primary-en: 'Cabin', sans-serif;
+  --logo-en: 'Alkatra', cursive;
+  --secondary-kr: 'Nanum Pen Script', cursive;
+
+  /* Font color */
+  --dark-black: #333333;
+  --light-black: #777777;
+  --light-gray: #eeeeee;
+  
+  /* Background Color */
+  --grannyapple: #421B38;
+  --Lilac: #7F5F8E;
+  --pink: #EDCDDA;
+  --bouquet: #BB83A8;
+  --quartz: #D6D6F0;
+}
