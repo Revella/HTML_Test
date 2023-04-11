@@ -1,2 +1,90 @@
 @import url(/css/variable.css);
 @import url(/css/reset.css);
+
+/* Main Page */
+#main-header {
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+  position: relative;
+}
+.mian-pic {
+  width: 100%;
+  height: inherit;
+}
+#main-header ._1{
+  width: 100%;
+  height: 100%;
+  background: url(/img/tetiana-shadrina-BgDvAapofe0-unsplash.jpg) no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+}
+._2 {
+  width: 100%;
+  background: url(/img/isabella-fischer-6ast1xZ9YJY-unsplash.jpg) no-repeat center center;
+}
+#main-header .main_Txt {
+  width: 500px;
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  font-size: 4em;
+  text-align: right;
+  font-family: var(--logo-en);
+  color: var(--grannyapple);
+}
+
+/* Navigation */
+nav {
+  height: 80px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.25);
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 25px;
+  background-color: transparent;
+  top: 0;
+}
+.Logo {
+  margin-right: 20px;
+  display: inline-block;
+  font-size: 2.2em;
+  font-family: var(--logo-en);
+  color: var(--grannyapple);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.25) ;
+  line-height: 1.2em;
+}
+.content-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--primary-en);
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.gnb {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  gap: 1em;
+}
+.contact {
+  margin-right: 25px;
+}
+.gnb a,
+.contact a  {
+  color: var(--dark-black);
+}
+
+.about-inner {
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+}
