@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+body {
+  width: 370px;
+  height: 100vh;
+  margin: 0 auto;
+}
+ul, li {
+  list-style: none;
+}
+
+/* main */
+.wrap {
+  margin-top: 50px;
+  width: 370px;
+  height: 80%;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Clock */
+.clock {
+  width: 100%;
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+.time-clock {
+  margin-top: 20px;
+  padding: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+.time {
+  margin-top: 20px;
+  display: inline-block;
+  font-weight: 600;
+  color: deepskyblue;
+  text-align: center;
+}
+
+/* Todo list */
+form {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+form input, form button {
+  justify-content: space-between;
+}
+form input {
+  width: 70%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: 1px solid #777;
+}
+form button {
+  width: 30%;
+  text-align: center;
+  background-color: aqua;
+  border: none;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px dotted #777;
+}
+li:last-child {
+  border: none;
+}
+span {
+  flex: 70%;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+button {
+  flex: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: aqua;
+  text-align: center;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+button:hover {
+  background-color: deepskyblue;
+}

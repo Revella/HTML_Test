@@ -1,0 +1,8 @@
+#container {
+  width: 400px;
+  height: 400px;
+
+  margin: 200px auto;
+  padding-top: 20px;
+  text-align: center;
+}
