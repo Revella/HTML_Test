@@ -88,12 +88,17 @@ nav {
   width: 75%;
   height: 100vh;
   margin: 0 auto;
-  padding: 50px;
+  position: relative;
+}
+.about-contents {
+  height: inherit;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
 }
-.about-inner .about-txt {
+.about-contents .about-txt {
   height: 50vh;
   font-size: 2.3em;
   font-family: var(--secondary-kr);
@@ -119,30 +124,61 @@ nav {
 .about-name p {
   line-height: 2.8em;
 }
+.about-pic img{
+  width: 140%;
+  z-index: -1;
+}
+.about-pic img:hover {
+  filter: grayscale(1);
+}
 
 /* Web Site page */
 .website-inner {
+  width: 100%;
   height: 100vh;
-  padding: 50px;
+  position: relative;
 }
 .website-inner .web-contents {
-  width: 80%;
-  height: 80vh;
-  margin: 0 auto;
+  height: auto;
+  margin: 50px auto;
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
 }
 .web-content {
-  width: 100%;
+  padding: 80px ;
+  width: inherit;
   display: flex;
   flex-direction: row;
   gap: 50px;
+}
+.web-content:nth-child(even) {
+  width: inherit;
+  background-color: rgba(187, 131, 168, 0.25);
 }
 .website-txt {
   width: 30%;
   font-size: 1.6em;
 }
-.web-pic {
-  width: 70%;
+.web-pic img{
+  width: 100%;
+}
+
+/* mobile page */
+.mobile-inner {
+  width: 100%;
+  height: 100vh;
+}
+.mobile-inner .mobile-content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* js page */
+.js-inner {
+  width: 100%;
+  height: 100vh;
+}
+.js-inner .js-contents{
+  display: flex;
+  flex-direction: row;
 }
