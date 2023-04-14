@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 600px;
+  margin: 0 auto;
+}
+form {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #ccc;
+}
+input {
+  width: 350px;
+  height: 30px;
+  padding-left: 10px;
+}
+button {
+  width: 350px;
+  height: 30px;
+}
+#val {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+#profile {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+}
+img {
+  width: 150px;
+  border-radius: 5%;
+}
+#desc {
+  margin: 10px 20px;
+}
+p {
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+.clicked {
+  background-color: yellow;
+  color: blue;
+}
+
+button {
+  padding: 10px ;
+  font-size: 14px;
+}
+
+.on {
+  background-color: #333;
+}

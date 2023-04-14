@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom -->
+  <script defer src="/script.js"></script>
+  <link rel="stylesheet" href="/style.css">
+  <title>document</title>
+</head>
+<body>
+  <div class="container">
+    <form name="order">
+      <fieldset>
+        <legend>상품정보</legend>
+        <ul>
+          <li>
+            <label for="product" class="field">상품 : </label>
+            <input type="text" class="input-box" id="product" name="product"/>
+          </li>
+          <li>
+            <label for="prod-num" class="field">개수 : </label>
+            <input type="number" class="input-box" id="prod-num" name="prod-num" value="1" min="1"/>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>주문정보</legend>
+        <ul>
+          <li>
+            <label for="order-name" class="field">이름 : </label>
+            <input type="text" class="input-box" id="order-name" name="order-name" />
+          </li>
+          <li>
+            <label for="order-tel" class="field">연락처 : </label>
+            <input type="text" class="input-box" id="order-tel" name="order-tel" />
+          </li>
+          <li>
+            <label for="order-addr" class="field">주소 : </label>
+            <input type="text" class="input-box" id="order-addr" name="order-addr" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>옵션상품</legend>
+        <label for="opt">상품추가</label>
+        <select name="option" id="option">
+          <option value="">====옵션선택====</option>
+          <option value="opta">통화장치</option>
+          <option value="optb">계란한판</option>
+          <option value="optc">생수 1세트</option>
+          <option value="optd">양말세트</option>
+          <option value="opte">배송비할인</option>
+          <option value="optf">반값쿠폰</option>
+        </select>
+      </fieldset>
+      <fieldset id="delivery-list">
+        <legend>배송비 옵션선택</legend>
+        <p>배송비 결제 방식을 선택해 주세요.</p>
+        <label><input type="radio" name="delivery" value="before">선결제</label>
+        <label><input type="radio" name="delivery" value="after">후결제</label>
+        <label><input type="radio" name="delivery" value="coupon">쿠폰결제</label>
+      </fieldset>
+      <fieldset id="mailing-list">
+        <legend>메일링</legend>
+        <p>메일로 받고 싶은 쇼핑정보를 선택해 주세요.</p>
+        <label><input type="checkbox" name="mailing" id="mailing" value="fruit">과일류</label>
+        <label><input type="checkbox" name="mailing" id="mailing" value="fashion">패션잡화</label>
+        <label><input type="checkbox" name="mailing" id="mailing" value="food">식품류</label>
+      </fieldset>
+      <button type="submit" class="order">주문하기</button>
+    </form>
+  </div>
+</body>
+</html>
