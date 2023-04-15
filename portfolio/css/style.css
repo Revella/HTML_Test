@@ -4,7 +4,7 @@
 /* Main Page */
 #main-header {
   width: 100%;
-  height: 94vh;
+  height: 92vh;
   overflow: hidden;
   position: relative;
 }
@@ -15,7 +15,7 @@
 #main-header ._1{
   width: 100%;
   height: 100%;
-  background: url(/img/tetiana-shadrina-BgDvAapofe0-unsplash.jpg) no-repeat center center;
+  background: url(/img/main-img_2.jpg) no-repeat center center;
   background-size: cover;
   opacity: 0.5;
 }
@@ -24,7 +24,7 @@
   position: absolute;
   top: 50%;
   right: 10%;
-  font-size: 6em;
+  font-size: 5.2em;
   text-align: right;
   font-family: var(--logo-en);
   color: var(--grannyapple);
@@ -34,7 +34,8 @@
 /* Navigation */
 nav {
   height: 80px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
   position: sticky;
   top: 0;
   left: 0;
@@ -86,12 +87,12 @@ nav {
 }
 
 /* About page */
-
 .about-inner {
   width: 75%;
   height: 100vh;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 100px;
 }
 .about-contents {
   height: inherit;
@@ -100,12 +101,23 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  position: relative;
 }
 .about-contents .about-txt {
-  height: 50vh;
+  width: 70%;
+  height: 65vh;
   font-size: 2.3em;
   font-family: var(--secondary-kr);
+  padding: 20px;
+  background-color: rgba(214, 214, 240, 0.4);
+
+  border-radius: 50px;
   color: var(--dark-black);
+  position: absolute;
+  left: 20%;
+  transform: translateX(-20%);
+  z-index: 7;
+  transition: 2s;
 }
 .about-txt h2 {
   color: var(--light-black);
@@ -116,7 +128,13 @@ nav {
   padding: 0;
   font-family: var(--logo-en);
   font-size: 1.6em;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+}
+.about-txt .overview {
+  font-size: 0.5em;
+  font-family: var(--primary-kr);
+  color: var(--light-black);
+  margin: 15px auto;
 }
 .about-name {
   display: flex;
@@ -128,17 +146,26 @@ nav {
   line-height: 2.8em;
 }
 .about-pic img{
-  width: 140%;
-  z-index: -1;
+  width: 100%;
+  height: 2000px;
+  position: absolute;
+  top: -50%;
+  left: 30%;
+  z-index: 2;
+}
+.about-txt:hover {
+  transform: translateX(-10%);
+  scale: 1.2;
 }
 .about-pic img:hover {
-  filter: grayscale(1);
+  filter: blur(2px);
 }
 
 /* Web Site page */
 .website-inner {
   width: 100%;
   position: relative;
+  margin-bottom: 100px;
 }
 .website-inner .web-contents {
   height: auto;
@@ -148,12 +175,14 @@ nav {
 }
 .web-hd {
   color: var(--light-black);
-  font-size: 4.5em;
+  font-size: 4em;
   margin-top: 100px;
   margin-bottom: 15px;
   padding: 0 250px;
 }
-.web-content {
+.web-content,
+.mobile-content,
+.js-content {
   padding: 100px ;
   width: inherit;
   display: flex;
@@ -170,7 +199,8 @@ nav {
   width: 30%;
   font-size: 1.6em;
 }
-.web-pic img{
+.web-pic img,
+.web-mobile img{
   width: 100%;
 }
 
@@ -178,28 +208,50 @@ nav {
 .mobile-inner {
   width: 100%;
   height: 100vh;
+  margin-bottom: 100px;
 }
-.mobile-inner .mobile-content {
-  margin: 0 auto;
-  padding: 50px;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
+.mobile-hd {
+  color: var(--light-black);
+  font-size: 3em;  
+}
+.sub-title {
+  font-family: var(--primary-en);
+}
+.mobile-txt .mobile-more {
+  background-color: var(--Lilac);
 }
 
 /* js page */
 .js-inner {
+  padding-top: 200px;
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+
 }
-.js-inner .js-content{
-  height: 100vh;
+.js-inner .js-head {
+  padding: 0 250px;
   margin: 50px auto;
+  width: 100%;
+}
+.js-contents{
+  width: inherit;
   display: flex;
   flex-direction: row;
 }
-
+.js-pic {
+  position: relative;
+}
+.js-pic .js-more{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transform: translate(-5%, -5%);
+  background-color: var(--quartz);
+}
 
 /* Button */
 .view-more {
@@ -210,11 +262,11 @@ nav {
   border: none;
   border-radius: 50px;
   font-size: 0.9em;
-  background-color: var(--pink);
+  background-color: var(--bouquet);
+  color: white;
   transition: 1s ease-in-out;
   z-index: 5;
 }
 .view-more:hover {
   background-color: var(--grannyapple);
-  color: white;
 }
