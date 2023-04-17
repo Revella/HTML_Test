@@ -147,17 +147,12 @@ nav {
   line-height: 2.8em;
 }
 .about-pic img{
-  width: 100%;
-  height: 2000px;
+  height: 80%;
   position: absolute;
-  top: -30%;
-  left: 30%;
+  top: 80px;
+  right: 50px;
   z-index: 2;
 }
-/* .about-txt:hover {
-  transform: translateX(-10%);
-  scale: 1.2;
-} */
 .about-pic img:hover {
   filter: blur(2px);
 }
@@ -231,7 +226,8 @@ nav {
   align-items: center; 
 
 }
-.js-inner .js-head {
+.js-head {
+  margin-top: 80px;
   padding: 0 250px;
   margin: 50px auto;
   width: 100%;
