@@ -19,6 +19,18 @@
   background-size: cover;
   opacity: 0.5;
 }
+.main-btn {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.main-btn div {
+  border: 2px solid red;
+  font-size: 2em;
+  padding: 20px;
+}
 #main-header .main_Txt {
   /* width: 800px; */
   position: absolute;
@@ -85,6 +97,10 @@ nav {
 .gnb a,
 .contact a  {
   color: var(--dark-black);
+}
+.gnb a.on {
+  color: #fff;
+  background-color: transparent;
 }
 
 /* About page */
@@ -328,8 +344,4 @@ footer p {
 .on {
   background-color: var(--dark-black);
   color: var(--light-gray);
-}
-.focus {
-  color: var(--Lilac);
-  text-decoration: underline;
 }
