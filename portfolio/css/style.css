@@ -1,7 +1,8 @@
 @import url(/css/variable.css);
 @import url(/css/reset.css);
+@import url(/css/dark.css);
 
-/* Main Page */
+/* === Main Page === */
 #main-header {
   width: 100%;
   height: 92vh;
@@ -17,17 +18,21 @@
   height: 100%;
   background: url(/img/main-img_2.jpg) no-repeat center center;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .main-btn {
+  padding: 5px;
   height: inherit;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 2.3em;
+  opacity: 0.3;
+  color: var(--light-black);
   z-index: 2;
 }
 .main-btn div {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   font-size: 2em;
   padding: 20px;
 }
@@ -43,7 +48,7 @@
   transition: 1.5s;
 }
 
-/* Navigation */
+/* === Navigation === */
 nav {
   width: 100%;
   height: 80px;
@@ -103,7 +108,7 @@ nav {
   background-color: transparent;
 }
 
-/* About page */
+/* === About page === */
 .about-inner {
   width: 75%;
   height: 100vh;
@@ -173,7 +178,7 @@ nav {
   filter: blur(2px);
 }
 
-/* Web Site page */
+/* === Web Site page === */
 .website-inner {
   width: 100%;
   position: relative;
@@ -215,7 +220,7 @@ nav {
   width: 100%;
 }
 
-/* mobile page */
+/* === Mobile Page === */
 .mobile-inner {
   width: 100%;
   height: 100vh;
@@ -232,7 +237,7 @@ nav {
   background-color: var(--Lilac);
 }
 
-/* js page */
+/* === js page === */
 .js-inner {
   width: 100%;
   height: auto;
@@ -322,7 +327,7 @@ footer p {
   background-color: var(--grannyapple);
 }
 
-/* Button */
+/* === Button === */
 .view-more {
   margin-top: 20px;
   width: 220px;
@@ -338,10 +343,4 @@ footer p {
 }
 .view-more:hover {
   background-color: var(--grannyapple);
-}
-
-/* Day Dark Button */
-.on {
-  background-color: var(--dark-black);
-  color: var(--light-gray);
 }

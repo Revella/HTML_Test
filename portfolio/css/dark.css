@@ -1,0 +1,51 @@
+/* Day Dark Button */
+body.on {
+  background-color: var(--dark-black);
+  color: #121212;
+}
+/* === Main-Page Dark === */
+body.on .Logo a {  
+  color: var(--pink);
+}
+/* === Navigation Dark === */
+body.on .gnb a {  
+  color: var(--quartz);
+}
+body.on .contact a {  
+  color: var(--quartz);
+}
+/* === About page Dark === */
+body.on .about-txt h2 {
+  color: var(--light-gray);
+}
+body.on .about-txt p {  
+  color: var(--light-gray);
+}
+/* === Web Site page Dark === */
+body.on .web-hd {
+  color: var(--light-gray);}
+body.on .website-txt {
+  color: var(--light-gray);
+}
+body.on .text p {
+  color: var(--light-gray);
+}
+/* === Mobile Page Dark=== */
+body.on .mobile-hd {
+  color: var(--light-gray);
+}
+body.on .sub-title {
+  color: var(--light-gray);
+}
+/* === js page Dark=== */
+body.on .js-items:nth-child(even) h2 {
+  color: var(--light-gray);
+}
+
+/*  */
+body.on .dark-btn {
+  background-color: var(--grannyapple);
+}
+body.on .dark-btn:hover {
+  background-color: var(--bouquet);
+}

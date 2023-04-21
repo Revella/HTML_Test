@@ -1,6 +1,6 @@
 /* Main */
 const mainPic = document.querySelector(".pic");
-const pics = ["main-img_1.jpg", "main-img_2.jpg", "main-img_1.jpg", "main-img_2.jpg"]
+const pics = ["main-img_1.jpg", "main-img_2.jpg"]
 // mainPic.style.backgroundImage = `url(/img/${pics[1]})`;
 
 const arrows = document.querySelectorAll(".arrow");
@@ -22,6 +22,12 @@ arrows.forEach((e) => {
   mainPic.style.backgroundImage = `url(/img/${pics[i]})`;
   })
 })
+// function arrowBtn() {
+  
+// }
+
+// setInterval(arrowBtn, 2000);
+
 // main gnb
 let mainNav = document.querySelectorAll(".navBtn");
 
@@ -43,7 +49,6 @@ const DayNigth = document.querySelector(".dark-btn");
 DayNigth.addEventListener("click", () => {
   document.body.classList.toggle("on");
 
-  aboutText.classList.toggle("on");
   if(DayNigth.innerHTML == "Dark") {
     DayNigth.innerHTML = "Day"
   } else if(DayNigth.innerHTML == "Day") {
