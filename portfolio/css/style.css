@@ -13,31 +13,66 @@
   width: 100%;
   height: inherit;
 }
-#main-header ._1{
-  width: 100%;
-  height: 100%;
-  background: url(/img/main-img_2.jpg) no-repeat center center;
-  background-size: cover;
-  opacity: 0.8;
-}
-.main-btn {
-  padding: 5px;
-  height: inherit;
+.main-wrap{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 2.3em;
-  opacity: 0.3;
-  color: var(--light-black);
-  z-index: 2;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  width: inherit;
+  height: inherit;
 }
-.main-btn div {
-  /* border: 2px solid red; */
-  font-size: 2em;
-  padding: 20px;
+.pic {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-shrink: 0;
+
+  position: relative;
+  left: 0;
+  object-fit: scale-down;
+  object-position: center center;
+  max-width: 100%;
+  max-height: 100%;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  font-size: 2.4em;
+  padding: 15px;
+  color: var(--light-black);
+  opacity: 0.5;
+}
+.arrow:hover {
+  opacity: 1;
+}
+.main-wrap .btn_back {
+  position: absolute;
+  left: 0;
+}
+.main-wrap .btn_next {
+  position: absolute;
+  right: 0;
+}
+.slider .slide_pagination{
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slider .slide_pagination > li {
+  color: rgba(214, 214, 240, 0.2);
+  cursor: pointer;
+  font-size: 25px;
+  z-index: 9999;
+}
+.slider .slide_pagination > li.active {
+  color: var(--quartz);
 }
 #main-header .main_Txt {
-  /* width: 800px; */
   position: absolute;
   top: 50%;
   right: 10%;
@@ -46,6 +81,13 @@
   font-family: var(--logo-en);
   color: var(--grannyapple);
   transition: 1.5s;
+}
+#main-header ul,
+#main-header li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 3;
 }
 
 /* === Navigation === */
@@ -102,10 +144,6 @@ nav {
 .gnb a,
 .contact a  {
   color: var(--dark-black);
-}
-.gnb a.on {
-  color: #fff;
-  background-color: transparent;
 }
 
 /* === About page === */

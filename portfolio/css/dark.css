@@ -41,8 +41,20 @@ body.on .sub-title {
 body.on .js-items:nth-child(even) h2 {
   color: var(--light-gray);
 }
+body.on .js-items:nth-child(odd) {
+  width: inherit;
+  height: inherit;
+  background-color: var(--Lilac);
+}
 
-/*  */
+/* === Footer === */
+body.on footer {
+  color: var(--light-gray);
+  background-color: var(--Lilac);
+  opacity: 0.8;
+}
+
+/* === Dark Button === */
 body.on .dark-btn {
   background-color: var(--grannyapple);
 }
