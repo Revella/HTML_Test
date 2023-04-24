@@ -55,7 +55,7 @@ function nextMove() {
     currSlide = 0;
     let offset = slideWidth * currSlide;
     mainPics.forEach((i) => {
-      i.setAttribute("style", `transition: ${0}s; left: ${-offset}px`);
+      i.setAttribute("style", `transition: ${0.15}s; left: ${-offset}px`);
     });
     currSlide++;
     offset = slideWidth * currSlide;
@@ -83,7 +83,7 @@ function prevMove() {
     currSlide = maxSlide + 1;
     let offset = slideWidth * currSlide;
     mainPics.forEach((i) => {
-      i.setAttribute("stlye", `tasition: ${0}s; left ${-offset}px`);
+      i.setAttribute("stlye", `tasition: ${0.15}s; left ${-offset}px`);
     });
     currSlide--;
     offset = slideWidth * currSlide;
@@ -149,8 +149,6 @@ mainSlider.addEventListener("mouseout", () => {
   }, 3000);
 })
 
-/* === Main Gnb === */
-let mainNav = document.querySelectorAll(".navBtn");
 
 
 /* === About Content === */

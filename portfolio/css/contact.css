@@ -1,0 +1,58 @@
+#wrap {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+#pic {
+  width: 50%;
+  height: 100vh;
+  background: url(/img/contact.jpg) no-repeat right;
+  background-size: 100% 100vh;
+  justify-content: left;
+}
+#header {
+  width: 50%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;  
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+}
+#header h1 {
+  margin-left: 20px;
+  font-family: var(--logo-en);
+}
+#closeBtn {
+  text-align: right;
+  font-size: 1em;
+  border: none;
+  background-color: transparent;
+  color: var(--bouquet);
+  margin-right: 20px;
+}
+#contents {
+  width: 550px;
+  font-size: 2.2em;  
+}
+#content {
+  flex-direction: column;
+}
+#content a {
+  padding: 15px;
+  display: block;
+  margin-top: 20px;
+  color: var(--dark-black);
+}
+#content a:hover {
+  background-color: var(--dark-black);
+  color: var(--light-gray);
+  border-radius: 20px;
+}
+#container i {
+  margin-right: 15px;
+  font-size: 1.5em;  
+}
