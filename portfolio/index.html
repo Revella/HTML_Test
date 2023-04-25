@@ -7,10 +7,11 @@
 
   <!-- Jquery -->
   <!-- FontAwsome -->
-  <script src="https://kit.fontawesome.com/cde862182f.js" crossorigin="anonymous"></script>
+  <script defer src="https://kit.fontawesome.com/cde862182f.js" crossorigin="anonymous"></script>
   <!-- Custom JS & CSS -->
   <script defer src="/js/script.js"></script>
   <link rel="stylesheet" href="/css/style.css">
+
   <title>Portfoilo</title>
 </head>
 <body>
@@ -51,11 +52,15 @@
           <li><a href="#mobile" class="navBtn">Mobile</a></li>
           <li><a href="#js" class="navBtn">JavaScript</a></li>
         </ul>
-        <div class="contact"><a href="/contact.html">contact</a></div>
+        <div id="contact">contact</div>
     </div>
     </div>
-  </nav>  
-
+  </nav> 
+  
+  <div id="modal">
+    <iframe id="modal-contact" class="contacts" title="contact" src="/contact.html"></iframe>
+  </div>
+  
   <!-- About -->
   <section id="about">
     <div class="about-inner">
@@ -71,7 +76,7 @@
           <p class="overview txt_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quisquam quos nesciunt in perferendis!</p>
         </div>
         <div class="about-pic">
-          <img src="/img/about-img.png" alt="">
+          <img src="/img/about-img.png" alt="about-background-Img" />
         </div>
       </div>  
     </div>

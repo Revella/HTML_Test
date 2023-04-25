@@ -10,19 +10,20 @@
   overflow: hidden;
   position: relative;
 }
-.mian-pic {
-  width: 100%;
-  height: inherit;
-}
 .main-wrap{
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
   position: relative;
   user-select: none;
+}
+.mian-pic {
   width: inherit;
   height: inherit;
 }
+
 .pic {
   display: flex;
   align-items: center;
@@ -105,7 +106,7 @@ nav {
   border: 4.5px dashed rgba(187, 131, 168, 0.4);
   border-left: none;
   border-right: none;
-  z-index: 9999;
+  z-index: 4;
 }
 .nav-bar {
   display: flex;
@@ -144,12 +145,10 @@ nav {
   margin-right: 25px;
 }
 .gnb a,
-.contact a  {
+.contact  {
   color: var(--dark-black);
 }
-a.active-color {
-  color: var(--Lilac);
-}
+
 /* === About page === */
 .about-inner {
   width: 75%;
@@ -331,6 +330,7 @@ a.active-color {
   left: 25px;
   transform: translate(-5%, -5%);
   background-color: var(--quartz);
+  font-size: 1.2em;
 }
 footer {
   width: 100%;
@@ -358,7 +358,7 @@ footer p {
   padding: 5px 20px;
   font-size: 1.2em;
   font-weight: bold;
-  background-color: var(--bouquet);
+  background-color: var(--grannyapple);
   border: none;
   outline: none;
   color: #fff;
@@ -366,7 +366,7 @@ footer p {
   transition: 1s;
 }
 .dark-btn:hover{
-  background-color: var(--grannyapple);
+  background-color: var(--bouquet);
 }
 
 /* === Button === */
@@ -386,3 +386,25 @@ footer p {
 .view-more:hover {
   background-color: var(--grannyapple);
 }
+/* === Modal Page === */
+#modal {
+  display: none;
+  position: relative;
+}
+iframe.contacts {
+  width: 70vw;
+  height: 60vh;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+/* 
+iframe.active {
+  display: flex;
+} */

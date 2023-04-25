@@ -174,3 +174,16 @@ DayNigth.addEventListener("click", () => {
     DayNigth.innerHTML = "Dark";
   }
 })
+
+/* === Modal Button === */
+
+const contact = document.getElementById("contact");
+const modal = document.getElementById("modal");
+const clsBtnContact = document.getElementById("closeBtn-contact");
+
+contact.addEventListener("click", () => {
+  modal.style.display = "flex";
+})
+clsBtnContact.addEventListener("click", () => {
+  modal.style.display = "none";
+})

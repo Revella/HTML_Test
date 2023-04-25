@@ -56,8 +56,8 @@ body.on footer {
 
 /* === Dark Button === */
 body.on .dark-btn {
-  background-color: var(--grannyapple);
+  background-color: var(--bouquet);
 }
 body.on .dark-btn:hover {
-  background-color: var(--bouquet);
+  background-color: var(--grannyapple);
 }
