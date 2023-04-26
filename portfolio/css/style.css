@@ -2,7 +2,6 @@
 @import url(/css/reset.css);
 @import url(/css/dark.css);
 @import url(/css/contact.css);
-/* @import url(/css/flexstyle.css); */
 
 /* === Main Page === */
 #main-header {
@@ -12,8 +11,7 @@
   position: relative;
 }
 .main-wrap{
-  width: 500%;
-  height: 100vh;
+  height: inherit;
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
@@ -148,6 +146,9 @@ nav {
 #contact  {
   color: var(--dark-black);
 }
+.gnb a:hover {
+  border-bottom: 3px solid var(--Lilac);
+}
 
 /* === About page === */
 .about-inner {
@@ -256,9 +257,18 @@ nav {
   width: 30%;
   font-size: 1.6em;
 }
+.web-pic {
+  width: 1280px;
+  height: 680px;
+  transition: 1s;
+}
+.web-pic:hover img {
+  scale: 1.1;
+}
 .web-pic img,
 .web-mobile img{
   width: 100%;
+  height: 100%;
 }
 
 /* === Mobile Page === */
@@ -388,13 +398,20 @@ footer p {
 }
 /* === Modal Page === */
 .modal {
-  /* display: none; */
+  display: none;
   position: relative;
   width: 100%;
   height: auto;
   border: 2px solid #ccc;
 }
-iframe.contacts {
+.contact {
+  position: relative;
+}
+.modal.acitve {
+  display: inline-block;
+}
+
+iframe.view-modal {
   width: 70vw;
   height: 60vh;
   z-index: 80;
@@ -406,16 +423,17 @@ iframe.contacts {
   border-radius: 20px;
   border: none;
 }
-.modal a.cloBtn {
-  font-size: 70px;
-  position: absolute;
-  top: -385px;
-  left: 82%;
-  z-index: 99;
+iframe.flexweb {
+  width: 90%;
+  height: 100vh;
 }
-
-
-/* 
-iframe.active {
-  display: flex;
+.contact a.cloBtn {
+  font-size: 2em;
+  z-index: 999;
+  position: absolute;
+  top: -27vh;
+  left: 82%;
+}
+.modal i{
+  font-size: 2em;
 }

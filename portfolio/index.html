@@ -40,27 +40,29 @@
     </div>
   </main>
 
+  <!-- Contact modal -->
+  <div class="modal contact">
+    <iframe id="modal-contact" class="contacts view-modal" title="contact" src="/contact.html"></iframe>
+    <a id="closeBtn-contact" class="cloBtn"><i class="fa-solid fa-circle-xmark"></i></a>
+  </div>
+
   <!-- Navigation -->
   <nav id="main-gnb bar">
     <div class="nav-bar">
       <span class="Logo"><a href="#">Portfoilo</a></span>
       <div class="content-bar">
         <ul class="gnb">
-          <li><a href="#about" class="navBtn">About</a></li>
-          <li><a href="#website" class="navBtn">Web Site</a></li>
-          <li><a href="#mobile" class="navBtn">Mobile</a></li>
-          <li><a href="#js" class="navBtn">JavaScript</a></li>
+          <li class="gnb-item"><a href="#about" class="navBtn">About</a></li>
+          <li class="gnb-item"><a href="#website" class="navBtn">Web Site</a></li>
+          <li class="gnb-item"><a href="#mobile" class="navBtn">Mobile</a></li>
+          <li class="gnb-item"><a href="#js" class="navBtn">JavaScript</a></li>
         </ul>
         <div id="contact">contact</div>
     </div>
     </div>
   </nav> 
 
-  <!-- Contact modal -->
-  <div class="modal">
-    <iframe id="modal-contact" class="contacts" title="contact" src="/contact.html"></iframe>
-    <a id="closeBtn-contact" class="cloBtn modal_close_btn"><i class="fa-solid fa-circle-xmark"></i></a>
-  </div>
+
   
   <!-- About -->
   <section id="about">
@@ -92,19 +94,19 @@
         </div>
         <div class="web-content">
           <div class="web-pic">
-            <img src="http://place-hold.it/1280x680" alt="Flexweb">
+            <img src="/img/01-Flexweb.png" alt="Flexweb">
           </div>
           <div class="website-txt text">
             <h2>01 Flex Web</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quam error culpa illum ut, voluptate numquam ducimus inventore sequi labore assumenda itaque delectus laborum obcaecati expedita accusantium, consectetur iusto. Ad.</p>
-            <button class="web-more view-more" type="button">More →</button>
+            <button class="web-more view-more" type="button" data-modal="modal1">More →</button>
           </div>
         </div>
         <div class="web-content">
           <div class="website-txt text">
             <h2>02 Resposive Web</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quam error culpa illum ut, voluptate numquam ducimus inventore sequi labore assumenda itaque delectus laborum obcaecati expedita accusantium, consectetur iusto. Ad.</p>
-            <button class="web-more view-more">More →</button>
+            <button class="web-more view-more" data-modal="modal2">More →</button>
           </div>
           <div class="web-pic">
             <img src="http://place-hold.it/1280x680" alt="responsive-web">
@@ -117,16 +119,24 @@
           <div class="website-txt text">
             <h2>03 Resposive Web2</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quam error culpa illum ut, voluptate numquam ducimus inventore sequi labore assumenda itaque delectus laborum obcaecati expedita accusantium, consectetur iusto. Ad.</p>
-            <button class="web-more view-more">More →</button>
+            <button class="web-more view-more" data-modal="modal3">More →</button>
           </div>
         </div>   
       </div> 
     </div>
   </section>
 
-  <div class="modal">
-    <iframe title="flex" src="/flex.html"></iframe>
-    <a id="closeBtn-contact" class="cloBtn modal_close_btn"><i class="fa-solid fa-circle-xmark"></i></a>
+  <div class="modal modal1">
+    <iframe title="flex" class="flexweb view-modal" src="/flex.html"></iframe>
+    <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
+  </div>
+  <div class="modal modal2">
+    <iframe title="flex" class="flexweb view-modal" src="/flex.html"></iframe>
+    <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
+  </div>
+  <div class="modal modal3">
+    <iframe title="flex" class="flexweb view-modal" src="/flex.html"></iframe>
+    <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
   </div>
 
   <!-- Mobile page -->

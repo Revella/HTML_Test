@@ -1,12 +1,12 @@
 /* CSS Stlye */
-@import url('/css/1.intro.css');
-@import url('/css/2.header.css');
-@import url('/css/3.main.css');
-@import url('/css/4.about.css');
-@import url('/css/5.html.css');
-@import url('/css/6.curriculum.css');
-@import url('/css/7.contact.css');
-@import url('/css/8.footer.css');
+@import url('/responsive-web/css/1.intro.css');
+@import url('/responsive-web/css/2.header.css');
+@import url('/responsive-web/css/3.main.css');
+@import url('/responsive-web/css/4.about.css');
+@import url('/responsive-web/css/5.html.css');
+@import url('/responsive-web/css/6.curriculum.css');
+@import url('/responsive-web/css/7.contact.css');
+@import url('/responsive-web/css/8.footer.css');
 
 /* Font Stlye */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');

@@ -22,7 +22,6 @@ for (let i = 0; i < maxSlide; i++) {
 
 const paginationItems = document.querySelectorAll(".slide_pagination > li");
 
-
 const startSlide = mainPics[0];
 const endSlide = mainPics[mainPics.length -1];
 const startElem = document.createElement("div");
@@ -149,7 +148,17 @@ mainSlider.addEventListener("mouseout", () => {
   }, 3000);
 })
 
+/* === Contact Button === */
+const contactBtn = document.querySelector("#contact");
+const contactModal = document.querySelector(".contact");
+const contactClose = document.querySelector("#closeBtn-contact");
 
+contactBtn.addEventListener("click", () => {
+  contactModal.style.display = "block";
+})
+contactClose.addEventListener("click", () => {
+  contactModal.style.display = "none";
+})
 
 /* === About Content === */
 const aboutContents = document.querySelector(".about-contents");
@@ -176,19 +185,31 @@ DayNigth.addEventListener("click", () => {
 })
 
 /* === Modal Button === */
+document.addEventListener("DOMContentLoaded", () => {
+  const modalOpenBtns = document.querySelectorAll("button[data-modal]")
+  const modals = document.querySelectorAll(".modal")
+  const closeBtns = document.querySelectorAll(".cloBtn")
 
-// const flexWeb = document.querySelector(flexweb)
-const contact = document.getElementById("contact");
-const modal = document.querySelector(".modal");
-const clsBtnContact = document.getElementById("closeBtn-contact");
+  modalOpenBtns.forEach((modalOpenBtn) => {
 
+    modalOpenBtn.addEventListener("click", (event)=> {
+      const modalName = event.target.dataset.modal;
+      if (event.target.dataset.modal === modalName) {
+        modals.forEach(modal => {
+          if(modal.classList.contains(modalName)) {
+            modal.classList.add("acitve")
+          }
+        })
+      }
+    })
+  })
 
-
-contact.addEventListener("click", () => {
-  modal.style.display = "flex";
+  closeBtns.forEach(closeBtn => {
+    closeBtn.addEventListener("click", (event) => {
+      const modal = event.target.closest(".modal");
+      modal.classList.remove("acitve");
+      console.log(modal);
+    })
+  })
 })
-clsBtnContact.addEventListener("click", () => {
-  modal.style.display = "none";
-})
 
-// const open = document.querySelectorAll(".open-modal")
