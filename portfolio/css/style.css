@@ -2,6 +2,7 @@
 @import url(/css/reset.css);
 @import url(/css/dark.css);
 @import url(/css/contact.css);
+/* @import url(/css/flexstyle.css); */
 
 /* === Main Page === */
 #main-header {
@@ -11,7 +12,7 @@
   position: relative;
 }
 .main-wrap{
-  width: 100%;
+  width: 500%;
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
@@ -23,7 +24,6 @@
   width: inherit;
   height: inherit;
 }
-
 .pic {
   display: flex;
   align-items: center;
@@ -141,11 +141,11 @@ nav {
   flex-direction: row;
   gap: 1em;
 }
-.contact {
-  margin-right: 25px;
+#contact {
+  padding-right: 25px;
 }
 .gnb a,
-.contact  {
+#contact  {
   color: var(--dark-black);
 }
 
@@ -387,24 +387,35 @@ footer p {
   background-color: var(--grannyapple);
 }
 /* === Modal Page === */
-#modal {
-  display: none;
+.modal {
+  /* display: none; */
   position: relative;
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
 }
 iframe.contacts {
   width: 70vw;
   height: 60vh;
-  z-index: 5;
+  z-index: 80;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50%; 
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 20px;
   border: none;
 }
+.modal a.cloBtn {
+  font-size: 70px;
+  position: absolute;
+  top: -385px;
+  left: 82%;
+  z-index: 99;
+}
+
 
 /* 
 iframe.active {
   display: flex;
-} */
+}

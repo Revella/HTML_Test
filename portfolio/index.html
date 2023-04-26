@@ -5,13 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Jquery -->
   <!-- FontAwsome -->
   <script defer src="https://kit.fontawesome.com/cde862182f.js" crossorigin="anonymous"></script>
   <!-- Custom JS & CSS -->
   <script defer src="/js/script.js"></script>
   <link rel="stylesheet" href="/css/style.css">
-
+  
   <title>Portfoilo</title>
 </head>
 <body>
@@ -56,9 +55,11 @@
     </div>
     </div>
   </nav> 
-  
-  <div id="modal">
+
+  <!-- Contact modal -->
+  <div class="modal">
     <iframe id="modal-contact" class="contacts" title="contact" src="/contact.html"></iframe>
+    <a id="closeBtn-contact" class="cloBtn modal_close_btn"><i class="fa-solid fa-circle-xmark"></i></a>
   </div>
   
   <!-- About -->
@@ -96,7 +97,7 @@
           <div class="website-txt text">
             <h2>01 Flex Web</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quam error culpa illum ut, voluptate numquam ducimus inventore sequi labore assumenda itaque delectus laborum obcaecati expedita accusantium, consectetur iusto. Ad.</p>
-            <button class="web-more view-more">More →</button>
+            <button class="web-more view-more" type="button">More →</button>
           </div>
         </div>
         <div class="web-content">
@@ -122,6 +123,11 @@
       </div> 
     </div>
   </section>
+
+  <div class="modal">
+    <iframe title="flex" src="/flex.html"></iframe>
+    <a id="closeBtn-contact" class="cloBtn modal_close_btn"><i class="fa-solid fa-circle-xmark"></i></a>
+  </div>
 
   <!-- Mobile page -->
   <section id="mobile">

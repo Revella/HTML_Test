@@ -177,9 +177,12 @@ DayNigth.addEventListener("click", () => {
 
 /* === Modal Button === */
 
+// const flexWeb = document.querySelector(flexweb)
 const contact = document.getElementById("contact");
-const modal = document.getElementById("modal");
+const modal = document.querySelector(".modal");
 const clsBtnContact = document.getElementById("closeBtn-contact");
+
+
 
 contact.addEventListener("click", () => {
   modal.style.display = "flex";
@@ -187,3 +190,5 @@ contact.addEventListener("click", () => {
 clsBtnContact.addEventListener("click", () => {
   modal.style.display = "none";
 })
+
+// const open = document.querySelectorAll(".open-modal")
