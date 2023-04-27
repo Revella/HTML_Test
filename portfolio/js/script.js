@@ -1,5 +1,5 @@
 /* === Main Img Slider === */
-const mainSlider = document.querySelector(".main-wrap");
+const mainSlider = document.getElementById("mainWrap");
 let slideWidth = mainSlider.clientWidth;
 
 const btnBack = document.querySelector(".btn_back");
@@ -54,7 +54,7 @@ function nextMove() {
     currSlide = 0;
     let offset = slideWidth * currSlide;
     mainPics.forEach((i) => {
-      i.setAttribute("style", `transition: ${0.15}s; left: ${-offset}px`);
+      i.setAttribute("style", `transition: ${0}s; left: ${-offset}px`);
     });
     currSlide++;
     offset = slideWidth * currSlide;
@@ -82,7 +82,7 @@ function prevMove() {
     currSlide = maxSlide + 1;
     let offset = slideWidth * currSlide;
     mainPics.forEach((i) => {
-      i.setAttribute("stlye", `tasition: ${0.15}s; left ${-offset}px`);
+      i.setAttribute("stlye", `tasition: ${0}s; left ${-offset}px`);
     });
     currSlide--;
     offset = slideWidth * currSlide;
@@ -194,6 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     modalOpenBtn.addEventListener("click", (event)=> {
       const modalName = event.target.dataset.modal;
+      // modalPosition(modalName);
       if (event.target.dataset.modal === modalName) {
         modals.forEach(modal => {
           if(modal.classList.contains(modalName)) {
@@ -208,8 +209,10 @@ document.addEventListener("DOMContentLoaded", () => {
     closeBtn.addEventListener("click", (event) => {
       const modal = event.target.closest(".modal");
       modal.classList.remove("acitve");
-      console.log(modal);
+      // bg.remove();
     })
   })
 })
+
+/* === Modal position=== */
 
