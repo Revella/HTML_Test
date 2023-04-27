@@ -11,7 +11,7 @@ body.on .Logo a {
 body.on .gnb a {  
   color: var(--quartz);
 }
-body.on .contact a {  
+body.on #contact  {  
   color: var(--quartz);
 }
 /* === About page Dark === */

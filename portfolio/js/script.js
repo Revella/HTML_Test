@@ -163,13 +163,14 @@ contactClose.addEventListener("click", () => {
 /* === About Content === */
 const aboutContents = document.querySelector(".about-contents");
 const aboutText = document.querySelector(".about-txt");
+const aboutPic = document.querySelector(".about-pic img");
 
 aboutContents.addEventListener("mouseover", () => {
   aboutText.style.scale = 1.15;
-})
+});
 aboutContents.addEventListener("mouseout", () => {
   aboutText.style.scale = 1;
-})
+});
 
 /* === Day Dark Button === */
 const DayNigth = document.querySelector(".dark-btn");
@@ -191,14 +192,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeBtns = document.querySelectorAll(".cloBtn")
 
   modalOpenBtns.forEach((modalOpenBtn) => {
-
     modalOpenBtn.addEventListener("click", (event)=> {
       const modalName = event.target.dataset.modal;
-      // modalPosition(modalName);
       if (event.target.dataset.modal === modalName) {
         modals.forEach(modal => {
           if(modal.classList.contains(modalName)) {
-            modal.classList.add("acitve")
+            modal.classList.add("active")
           }
         })
       }
@@ -208,11 +207,9 @@ document.addEventListener("DOMContentLoaded", () => {
   closeBtns.forEach(closeBtn => {
     closeBtn.addEventListener("click", (event) => {
       const modal = event.target.closest(".modal");
-      modal.classList.remove("acitve");
-      // bg.remove();
+      modal.classList.remove("active");
     })
   })
 })
 
-/* === Modal position=== */
 
