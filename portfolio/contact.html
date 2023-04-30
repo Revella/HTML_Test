@@ -7,7 +7,19 @@
     <!-- FontAwsome -->
     <script src="https://kit.fontawesome.com/cde862182f.js" crossorigin="anonymous"></script>
     <!-- Custom JS & CSS -->
-    <script defer src="/js/script.js"></script>
+    
+    <!-- <script defer src="/js/script.js"></script> -->
+
+  <script>
+    const mailOpen = document.querySelector(".contact-mail");
+    const mailModal = document.querySelector(".ctModal");
+    
+    mailOpen.addEventListener("click", () => {
+      mailModal.classList.add("view");
+      console.log(mailModal);
+    })
+  </script>
+
     <link rel="stylesheet" href="/css/style.css">
   <title>Contact</title>
 </head>
@@ -20,11 +32,30 @@
       </div>
       <div id="contents">
         <div id="content">
-          <a href="#"><i class="fa-solid fa-envelope"></i>Email</a>
-          <a href="https://github.com/Revella/HTML_Test" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+          <div class="contact-mail"><i class="fa-solid fa-envelope"></i>Email</div>
+          <a href="https://github.com/Revella" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
         </div>
       </div>
     </div>
   </div>
+
+  <div id="ctModals" class="ctModal">
+    <div class="md_contents">
+      <h2>E-mail</h2>
+      <ul>
+        <li>
+          <lable>E-mail<input type="email" placeholder="E-mail을 입력하세요.">
+          </lable>
+        </li>
+        <li>
+          <textarea name="text" id="text" placeholder="문의사항을 입력해 주세요"></textarea>
+        </li>
+        <li>
+          <input type="submit">
+        </li>
+      </ul>
+    </div>
+  </div>
+  
 </body>
 </html>

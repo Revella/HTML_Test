@@ -3,17 +3,6 @@ body.on {
   background-color: var(--dark-black);
   color: #121212;
 }
-/* === Main-Page Dark === */
-body.on .Logo a {  
-  color: var(--pink);
-}
-/* === Navigation Dark === */
-body.on .gnb a {  
-  color: var(--quartz);
-}
-body.on #contact  {  
-  color: var(--quartz);
-}
 /* === About page Dark === */
 body.on .about-txt h2 {
   color: var(--light-gray);

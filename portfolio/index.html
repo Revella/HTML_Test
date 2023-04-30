@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <script defer src="https://code.jquery.com/jquery-3.6.4.js"></script>
+  <script defer src="https://code.jquery.com/jquery-migrate-1.4.1.js"></script>
   <!-- FontAwsome -->
   <script defer src="https://kit.fontawesome.com/cde862182f.js" crossorigin="anonymous"></script>
   <!-- Custom JS & CSS -->
@@ -14,29 +16,29 @@
   <title>Portfoilo</title>
 </head>
 <body>
+
   <!-- Main -->
-  <main>
-    <div id="main-header">
-      <div class="mian-pic slider">
-        <div id="mainWrap" class="main-wrap">
-          <div class="pic _1"><img src="/img/main-img_1.jpg" alt="main_1" /></div>
-          <div class="pic _2"><img src="/img/main-img_2.jpg" alt="main_2" /></div>
-          <div class="pic _3"><img src="/img/main-img_3.png" alt="main_3" /></div>
-          <div class="pic _4"><img src="/img/main-img_4.jpg" alt="main_4" /></div>
-          <div class="pic _5"><img src="/img/main-img_5.jpg" alt="main_5" /></div>
-          <div class="arrow btn_back">
-            <i class="fa-solid fa-caret-left"></i>
-          </div>
-          <div class="arrow btn_next">
-            <i class="fa-solid fa-caret-right"></i>
-          </div>
-          <ul class="slide_pagination"></ul>
+  <main id="main-header">
+    <div class="mian-pic slider">
+      <div id="mainWrap" class="main-wrap">
+        <div class="pic _1"><img src="/img/main-img_1.jpg" alt="main_1" /></div>
+        <div class="pic _2"><img src="/img/main-img_2.jpg" alt="main_2" /></div>
+        <div class="pic _3"><img src="/img/main-img_3.png" alt="main_3" /></div>
+        <div class="pic _4"><img src="/img/main-img_4.jpg" alt="main_4" /></div>
+        <div class="pic _5"><img src="/img/main-img_5.jpg" alt="main_5" /></div>
+        <div class="arrow btn_back">
+          <i class="fa-solid fa-caret-left"></i>
         </div>
-        <div class="main_Txt">
-          <div class="main _txt1">Frontend</div>
-          <div class="main _txt2">&Web Publisher</div>
-          <div class="main _txt3">Protfolio</div>
+        <div class="arrow btn_next">
+          <i class="fa-solid fa-caret-right"></i>
         </div>
+        <ul class="slide_pagination"></ul>
+      </div>
+      <div class="main_Txt">
+        <div class="txt1">Frontend</div>
+        <div class="txt2">&Web Publisher</div>
+        <div class="txt2">Protfolio</div>
+      </div>
     </div>
   </main>
 
@@ -48,23 +50,22 @@
     </div>
   </div>
 
-  <!-- Navigation -->
-  <nav id="main-gnb bar">
-    <div class="nav-bar">
-      <span class="Logo"><a href="#">Portfoilo</a></span>
-      <div class="content-bar">
-        <ul class="gnb">
-          <li class="gnb-item"><a href="#about" class="navBtn">About</a></li>
-          <li class="gnb-item"><a href="#website" class="navBtn">Web Site</a></li>
-          <li class="gnb-item"><a href="#mobile" class="navBtn">Mobile</a></li>
-          <li class="gnb-item"><a href="#js" class="navBtn">JavaScript</a></li>
-        </ul>
-        <div id="contact">contact</div>
-    </div>
-    </div>
-  </nav> 
+    <!-- Navigation -->
+    <nav id="main-gnb bar">
+      <div class="nav-bar">
+        <span class="Logo"><a href="#">Portfoilo</a></span>
+        <div class="content-bar">
+          <ul class="gnb">
+            <li class="gnb-item"><a href="#about" class="navBtn">About</a></li>
+            <li class="gnb-item"><a href="#website" class="navBtn">Web Site</a></li>
+            <li class="gnb-item"><a href="#mobile" class="navBtn">Mobile</a></li>
+            <li class="gnb-item"><a href="#js" class="navBtn">JavaScript</a></li>
+          </ul>
+          <div id="contact">contact</div>
+        </div>
+      </div>
+    </nav> 
 
-  
   <!-- About -->
   <section id="about">
     <div class="about-inner">
@@ -77,7 +78,6 @@
           </div>
           <h4 class="hd-txt">Over View</h4>
           <p class="overview txt_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ad dicta delectus nulla rerum dolorem quia, sequi perspiciatis? Molestiae qui voluptas vitae hic, numquam explicabo nesciunt facere voluptatem possimus optio.</p>
-          <p class="overview txt_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quisquam quos nesciunt in perferendis!</p>
         </div>
         <div class="about-pic">
           <img src="/img/about-img.png" alt="about-background-Img" />
@@ -94,37 +94,44 @@
           <h2 class="hd-txt web-hd">Web site</h2>
         </div>
         <div class="web-content">
-          <div class="web-pic">
-            <img src="/img/01-Flexweb.png" alt="Flexweb">
+          <div class="pic-item">
+            <div class="web-pic">
+              <img src="/img/01-responsive-web-page.png" alt="Flexweb">
+            </div>
           </div>
           <div class="website-txt text">
-            <h2>01 Flex Web</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quam error culpa illum ut, voluptate numquam ducimus inventore sequi labore assumenda itaque delectus laborum obcaecati expedita accusantium, consectetur iusto. Ad.</p>
-            <button class="web-more view-more" type="button" data-modal="modal1">More →</button>
-          </div>
-        </div>
-
-        <div class="web-content">
-          <div class="website-txt text">
-            <h2>02 Resposive Web</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quam error culpa illum ut, voluptate numquam ducimus inventore sequi labore assumenda itaque delectus laborum obcaecati expedita accusantium, consectetur iusto. Ad.</p>
-            <button class="web-more view-more" data-modal="modal2">More →</button>
-          </div>
-          <div class="web-pic">
-            <img src="http://place-hold.it/1280x680" alt="responsive-web">
-          </div>
-        </div>
-
-        <div class="web-content">
-          <div class="web-pic">
-            <img src="http://place-hold.it/1280x680" alt="Flexweb">
-          </div>
-          <div class="website-txt text">
-            <h2>03 Resposive Web2</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quam error culpa illum ut, voluptate numquam ducimus inventore sequi labore assumenda itaque delectus laborum obcaecati expedita accusantium, consectetur iusto. Ad.</p>
-            <button class="web-more view-more" data-modal="modal3">More →</button>
+            <h2>01. Resposive Web</h2>
+            <p>HTML및 CSS를 이용하여 만든 웹입니다.<br />
+              gird를 이용하여 만들어졌고, 요소에 마우스를 올렸을때 올려지지 않은 부분의 요소들은 블러처리 되는 등 애니메이션이 들어가 있습니다.</p>
+            <button class="web-more view-more" data-modal="modal1">More →</button>
           </div>
         </div> 
+        <div class="web-content">
+          <div class="website-txt text">
+            <h2>02. Flex Web</h2>
+            <p>CSS의 Display : Flex를 메인으로 하여 만들어진 웹입니다. <br />
+              마우스가 해당 아이템 요소의 위에 올라가면 영상이 움직게됩니다. <br />
+              해당 요소를 클릭하게되면 화면이 뜨는 동적인 웹을 보실 수 있습니다.</p>
+            <button class="web-more view-more" type="button" data-modal="modal2">More →</button>
+          </div>
+          <div class="pic-item">
+            <div class="web-pic">
+              <img src="/img/02-Flexweb.png" alt="Flexweb">
+            </div>
+          </div>
+        </div>
+        <div class="web-content">
+          <div class="pic-item">
+            <div class="web-pic">
+              <img src="/img/03-responsive-web-2-page.png" alt="responsive-web">
+            </div>
+          </div>
+          <div class="website-txt text">
+            <h2>03. Resposive Web2</h2>
+            <p>반응형 웹으로 PC 및 Mobile에 맞춰 만들어진 Web page입니다.<br />slick slider 및 Velocity를 이용하여 만들어졌습니다. </p>
+            <button class="web-more view-more" data-modal="modal3">More →</button>
+          </div>
+        </div>
       </div> 
     </div>
   </section>
@@ -133,29 +140,24 @@
 
   <div class="modal modal1">
     <div class="modalcontent webpage">
-      <iframe title="flex" class="flexweb view-modal" src="/flex.html"></iframe>
+      <iframe title="Resposvie-Web" class="Resposvie-Web view-modal" src="/responsive-web/Resposive.html"></iframe>
       <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
     </div>
   </div>
-
-
 
   <div class="modal modal2">
     <div class="modalcontent webpage">
-      <iframe title="flex" class="flexweb view-modal" src="/flex.html"></iframe>
+      <iframe title="flex" class="flexweb view-modal" src="/flex/flex.html"></iframe>
       <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
     </div>
   </div>
-
-
 
   <div class="modal modal3">
-    <div class="modalcontent webpage">
-      <iframe title="flex" class="flexweb view-modal" src="/flex.html"></iframe>
+    <div class="modalcontent Resposive2">
+      <iframe title="Resposive-Web2" class="ResposiveWeb2 view-modal" src="/responsive-web2/responsive.html"></iframe>
       <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
     </div>
   </div>
-
 
   <!-- Mobile page -->
   <section id="mobile">
@@ -177,8 +179,8 @@
   </section>
 
   <div class="modal modal4">
-    <div class="modalcontent">
-      <iframe title="flex" class="flexweb view-modal" src="/flex.html"></iframe>
+    <div class="modalcontent mobile">
+      <iframe title="mobile" class="mobile view-modal" src="/mobilepage/index.html"></iframe>
       <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
     </div>
   </div>
@@ -193,7 +195,7 @@
       <div class="js-contents">
         <div class="js-items">          
           <div class="js-text text">
-            <h2>가위 바위 보 게임</h2>
+            <h2>D-day계산기</h2>
           </div>
           <div class="js-content">
             <div class="js-item">
@@ -224,7 +226,7 @@
 
         <div class="js-items">          
           <div class="js-text text">
-            <h2>Music?</h2>
+            <h2>Music Player</h2>
           </div>
           <div class="js-content">
             <div class="js-item">
@@ -239,19 +241,19 @@
 
       <div class="modal modal5">
         <div class="modalcontent">
-          <iframe title="flex" class="flexweb view-modal" src="/flex.html"></iframe>
+          <iframe title="flex" class="flexweb view-modal" src=""></iframe>
           <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
         </div>
       </div>
       <div class="modal modal6">
         <div class="modalcontent">
-          <iframe title="flex" class="flexweb view-modal" src="/flex.html"></iframe>
+          <iframe title="flex" class="flexweb view-modal" src=""></iframe>
           <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
         </div>
       </div>
       <div class="modal modal7">
         <div class="modalcontent">
-          <iframe title="flex" class="flexweb view-modal" src="/flex.html"></iframe>
+          <iframe title="flex" class="flexweb view-modal" src=""></iframe>
           <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
         </div>
       </div>
@@ -266,5 +268,6 @@
     <i></i>
     <button class="dark-btn">Dark</button>
   </div>
+
 </body>
 </html>

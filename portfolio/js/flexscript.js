@@ -3,11 +3,11 @@ const aside = document.querySelector("aside");
 const close = aside.querySelector("span");
 
 for(let el of items) {
-  el.addEventListener("mouseenter", e=>{
+  el.addEventListener("mouseenter", e => {
     e.currentTarget.querySelector("video").play();
   });
-  el.addEventListener("mouseleave", e=>{
-    e.currentTarget.querySelector("video").paused();
+  el.addEventListener("mouseleave", e => {
+    e.currentTarget.querySelector("video").pause();
   });
 
   el.addEventListener("click", e=>{

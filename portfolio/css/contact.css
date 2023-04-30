@@ -40,15 +40,16 @@
 }
 #content {
   flex-direction: column;
-  position: sticky;
 }
-#content a {
+#content a,
+#content .contact-mail {
   padding: 15px;
   display: block;
   margin-top: 20px;
   color: var(--dark-black);
 }
-#content a:hover {
+#content a:hover,
+#content .contact-mail:hover {
   background-color: var(--dark-black);
   color: var(--light-gray);
   border-radius: 20px;
@@ -56,4 +57,58 @@
 #container i {
   margin-right: 15px;
   font-size: 1.5em;  
+}
+
+/* E-mail modal */
+.ct_modal {
+  width: 80%;
+  height: 50vh;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  border: 2px  solid red;
+  position: fixed;
+  margin: 50px auto;
+}
+.ct_modal .view{
+  display: block;
+}
+.md_contents {
+  width: 30%;
+  margin: 0 auto;
+}
+.md_contents h2 {
+  font-size: 2.2em;
+  color: var(--Lilac);
+  font-family: var(--logo-en);
+  margin-bottom: 15px;
+}
+.md_contents li {
+  margin-bottom: 10px;
+  color: var(--dark-black);
+}
+.md_contents label {
+  font-size: 1.5em;
+  font-family: var(--primary-en);
+}
+.md_contents input {
+  padding: 5px 10px;
+}
+.md_contents input[type="email"] {
+  width: 350px;
+  margin-left: 15px;
+}
+.md_contents textarea {
+  width: 415px;
+  height: 250px;
+  padding: 5px 10px;
+  resize: none;
+}
+.md_contents input[type="submit"] {
+  width: 415px;
+  font-size: 1.1em;
+  background-color: var(--quartz);
+  border: none;
 }

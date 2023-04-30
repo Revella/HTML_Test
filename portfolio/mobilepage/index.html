@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Web Page</title>
+</head>
+<body>
+  <script>
+    let UserAgent = navigator.userAgent;
+    if (UserAgent.match(
+        /iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i
+        ) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) {
+        location.href = "/mobilepage/Preloading.html";
+      } else {
+        location.href = "/mobilepage/mobile-mockup/muti-view.html";
+      }
+  </script>
+</body>
+</html>

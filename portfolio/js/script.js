@@ -1,6 +1,7 @@
 /* === Main Img Slider === */
-const mainSlider = document.getElementById("mainWrap");
+const mainSlider = document.querySelector("#mainWrap");
 let slideWidth = mainSlider.clientWidth;
+// mainSlider의 전체 넓이를 가져온 값 = slideWidth
 
 const btnBack = document.querySelector(".btn_back");
 const btnNext = document.querySelector(".btn_next");
@@ -160,6 +161,40 @@ contactClose.addEventListener("click", () => {
   contactModal.style.display = "none";
 })
 
+/* === Scroll Evnet === */
+$(function() {
+  let $menu = $('.content-bar ul li');
+  let $contents = $('section');
+
+  $menu.click(function(event) {
+    event.preventDefault();
+    let idx = $(this).index();
+    let tt = $contents.eq(idx).offset().top;
+
+    // 해당 위치로 이동
+    $('html, body').animate({scrollTop:tt});
+
+    // 활성화된 메뉴 표시
+    // $(this).addClass('over-view').siblings().removeClass('over-view');
+
+    // 스크롤 이동 반영해서 표시
+    $(window).scroll(function() {
+      let $sct = $(this).scrollTop();
+
+      $contents.each(function(i) {
+        let target = $(this);
+        if (target.offset().top - 10 < $sct) {
+          $menu.removeClass('over-view');
+          $menu.eq(i).addClass('over-view');
+        }
+        if (!(200 <= $sct)) {
+          $menu.removeClass('over-view');
+        }
+      })
+    });
+  });
+});
+
 /* === About Content === */
 const aboutContents = document.querySelector(".about-contents");
 const aboutText = document.querySelector(".about-txt");
@@ -190,6 +225,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalOpenBtns = document.querySelectorAll("button[data-modal]")
   const modals = document.querySelectorAll(".modal")
   const closeBtns = document.querySelectorAll(".cloBtn")
+  /* 모달 했을때 모달과 data-modal과 매치시켜주기 위해 사용.
+  modal이 한개가 아니기 때문에, forEach문으로 돌려줌.*/
 
   modalOpenBtns.forEach((modalOpenBtn) => {
     modalOpenBtn.addEventListener("click", (event)=> {
@@ -212,4 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
+/* === Contact Page Modal === */
 
+
+    
