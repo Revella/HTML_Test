@@ -8,7 +8,7 @@
 #pic {
   width: 50vw;
   height: 100vh;
-  background: url(/img/contact.jpg) no-repeat right;
+  background: url('/img/contact.jpg') no-repeat right;
   background-size: 100% 100vh;
   justify-content: left;
 }
@@ -47,6 +47,7 @@
   display: block;
   margin-top: 20px;
   color: var(--dark-black);
+  cursor: pointer;
 }
 #content a:hover,
 #content .contact-mail:hover {
@@ -60,30 +61,45 @@
 }
 
 /* E-mail modal */
-.ct_modal {
-  width: 80%;
-  height: 50vh;
+.ctModal {
+  width: 650px;
+  height: 500px;
   display: none;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
+  border-radius: 50px;
   background-color: #fefefe;
-  border: 2px  solid red;
+  box-shadow: 0 0 5px rgba(214, 214, 240, 0.5);
   position: fixed;
-  margin: 50px auto;
-}
-.ct_modal .view{
-  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 20px auto;
 }
 .md_contents {
-  width: 30%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
 .md_contents h2 {
   font-size: 2.2em;
   color: var(--Lilac);
   font-family: var(--logo-en);
   margin-bottom: 15px;
+}
+.conCloseBtn {
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2em;
+  color: var(--light-gray);
+  border: none;
+  border-radius: 50%;
+  background-color: var(--Lilac);
+  box-shadow: 0 0 3px rgba(187, 313, 168, 0.5);
 }
 .md_contents li {
   margin-bottom: 10px;
@@ -109,6 +125,12 @@
 .md_contents input[type="submit"] {
   width: 415px;
   font-size: 1.1em;
-  background-color: var(--quartz);
+  color: var(--light-gray);
+  background-color: var(--Lilac);
   border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.md_contents input[type="submit"]:hover {
+  background-color: var(--grannyapple);
 }

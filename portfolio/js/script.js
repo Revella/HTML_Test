@@ -1,7 +1,9 @@
+document.addEventListener("DOMContentLoaded", () => {
 /* === Main Img Slider === */
 const mainSlider = document.querySelector("#mainWrap");
 let slideWidth = mainSlider.clientWidth;
-// mainSlider의 전체 넓이를 가져온 값 = slideWidth
+/* mainSlider의 전체 넓이를 가져온 값 = slideWidth 
+  null값이 뜨는 이유는 HTMl 로딩이 다 되기 전에 값을 가져오기 때문이므로 document에 DOMContentLoaded 이벤트를 줌*/
 
 const btnBack = document.querySelector(".btn_back");
 const btnNext = document.querySelector(".btn_next");
@@ -148,17 +150,6 @@ mainSlider.addEventListener("mouseout", () => {
     nextMove();
   }, 3000);
 })
-
-/* === Contact Button === */
-const contactBtn = document.querySelector("#contact");
-const contactModal = document.querySelector(".contact");
-const contactClose = document.querySelector("#closeBtn-contact");
-
-contactBtn.addEventListener("click", () => {
-  contactModal.style.display = "block";
-})
-contactClose.addEventListener("click", () => {
-  contactModal.style.display = "none";
 })
 
 /* === Scroll Evnet === */
@@ -193,18 +184,6 @@ $(function() {
       })
     });
   });
-});
-
-/* === About Content === */
-const aboutContents = document.querySelector(".about-contents");
-const aboutText = document.querySelector(".about-txt");
-const aboutPic = document.querySelector(".about-pic img");
-
-aboutContents.addEventListener("mouseover", () => {
-  aboutText.style.scale = 1.15;
-});
-aboutContents.addEventListener("mouseout", () => {
-  aboutText.style.scale = 1;
 });
 
 /* === Day Dark Button === */
@@ -249,7 +228,3 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-/* === Contact Page Modal === */
-
-
-    
