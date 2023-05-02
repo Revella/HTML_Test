@@ -11,7 +11,8 @@
   <script defer src="https://kit.fontawesome.com/cde862182f.js" crossorigin="anonymous"></script>
   <!-- Custom JS & CSS -->
   <script defer src="/js/script.js"></script>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css"/>
+  <link rel="stylesheet" href="/css/mobilestyle.css"/>
   
   <title>Portfoilo</title>
 </head>
@@ -76,7 +77,7 @@
             <p>황영재</p>
           </div>
           <h4 class="hd-txt">Over View</h4>
-          <p class="overview txt_1"></p>
+          <p class="overview txt_1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="about-pic">
           <img src="/img/about-img.png" alt="about-background-Img" />
@@ -89,9 +90,9 @@
   <section id="website">
     <div class="website-inner">
       <div class="web-contents">
-        <div class=web-head>
+        <!-- <div class=web-head>
           <h2 class="hd-txt web-hd">Web site</h2>
-        </div>
+        </div> -->
         <div class="web-content">
           <div class="pic-item">
             <div class="web-pic">
@@ -166,9 +167,9 @@
           <img src="/img/mobileinfo1.jpg" alt="Flexweb">
         </div>
         <div class="mobile-txt text">
-          <h2 class="hd-txt mobile-hd">Mobile</h2>
           <h3 class="hd-txt sub-title">Todoy's Mealkit</h3>
-          <p>Mealkit 모바일 전용 웹 입니다.           
+          <p>Mealkit 모바일 전용 웹 입니다. <br />
+            다양한 상품을 만나 보실 수 있습니다.          
           </p>
           <button class="mobile-more view-more" data-modal="modal4">More →</button>
         </div>
@@ -187,13 +188,30 @@
   <!-- Java Script page -->
   <section id="js">
     <div class="js-inner">
-      <div class="js-head">
+      <!-- <div class="js-head">
         <h2 class="hd-txt mobile-hd">JavaScirpt</h2>
-      </div>
+      </div> -->
       <div class="js-contents">
         <div class="js-items">          
           <div class="js-text text">
-            <h2>D-day계산기</h2>
+            <h2>Todo List</h2>
+          </div>
+          <div class="js-content">
+            <div class="js-item todolists">
+              <form class="todolist">
+                <input class="Quest" type="text" placeholder="할 일을 입력하세요.">
+                <button class="submit">등록</button>
+              </form>
+              <div>
+                <ul class="list-item"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="js-items">          
+          <div class="js-text text">
+            <h2>Music Player</h2>
           </div>
           <div class="js-content">
             <div class="js-item">
@@ -204,54 +222,11 @@
             </div>
           </div>
         </div>
-
-
-
-        <div class="js-items">          
-          <div class="js-text text">
-            <h2>Todo List</h2>
-          </div>
-          <div class="js-content">
-            <div class="js-item">
-              <div class="js-pic">
-                <img src="http://place-hold.it/1280x680" alt="Flexweb">
-                <button class="js-more view-more" data-modal="modal6">More →</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="js-items">          
-          <div class="js-text text">
-            <h2>Music Player</h2>
-          </div>
-          <div class="js-content">
-            <div class="js-item">
-              <div class="js-pic">
-                <img src="http://place-hold.it/1280x680" alt="Flexweb">
-                <button class="js-more view-more" data-modal="modal7">More →</button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div class="modal modal5">
-        <div class="modalcontent">
-          <iframe title="flex" class="flexweb view-modal" src=""></iframe>
-          <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
-        </div>
-      </div>
-      <div class="modal modal6">
-        <div class="modalcontent">
-          <iframe title="flex" class="flexweb view-modal" src=""></iframe>
-          <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
-        </div>
-      </div>
-      <div class="modal modal7">
-        <div class="modalcontent">
-          <iframe title="flex" class="flexweb view-modal" src=""></iframe>
+        <div class="modalcontent musics">
+          <iframe title="MusicPlayer" class="music view-modal" src="/musicpage/musicIndex.html"></iframe>
           <a class="cloBtn webCloseBtn"><i class="fa-solid fa-circle-xmark"></i></a>
         </div>
       </div>
