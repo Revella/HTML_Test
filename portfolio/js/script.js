@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let loopInterval = setInterval(()=> {
     nextMove()
-  }, 3000);
+  }, 1800);
 
   mainSlider.addEventListener("mouseover", ()=> {
     clearInterval(loopInterval);
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
   mainSlider.addEventListener("mouseout", () => {
     loopInterval = setInterval(() => {
       nextMove();
-    }, 3000);
+    }, 1800);
   })
 
   /* === Modal Button === */
@@ -178,6 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
+}); //"DOMContentLoaded"
 
   /* === Scroll Evnet === */
   $(function() {
@@ -213,28 +214,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-}); //"DOMContentLoaded"
-
 /* === To do list === */
 const from = document.querySelector(".todolist");
 const input = document.querySelector(".Quest");
 const ul = document.querySelector(".list-item");
 
+
 const todos = [];
+
 const save = () => {
   localStorage.setItem('todos', JSON.stringify(todos));
 }
 
-const delItem = () => {
+const delItem = (event) => {
   const target = event.target.parentElement;
-  todos = todos.filter((todo) => todo.id != target.id);
-  console.log(target);
-  save();
   target.remove();
 }
 
 const addItem = (todo) => {
-  if(todo.text !== '') {
+  if(todo.text !=='') {
     const li = document.createElement('li');
     const button = document.createElement('button');
     const span = document.createElement('span');
@@ -249,9 +247,8 @@ const addItem = (todo) => {
     li.id = todo.id;
   }
 }
-const handler = document.querySelector(".submit");
 
-handler.addEventListener("click", (event) => {
+document.querySelector('.submit').addEventListener("click", (event) => {
   event.preventDefault();
   
   const todo = {
@@ -265,17 +262,27 @@ handler.addEventListener("click", (event) => {
   input.value = '';
 })
 
-const init = () => {
-  const userTodos = JSON.parse(localStorage.getItem('todos'));
-  if (userTodos) {
-    userTodos.forEach((todo) => {
-      addItem(todo);
-    })
-  }
-  todos = userTodos;
+/* === Mobile slider === */
+
+let index = 0;
+window.onload = function() {
+  slideShow();
 }
 
-from.addEventListener('submit', handler);
+function slideShow() {
+  let i;
+  let imgs = document.getElementsByClassName("mInfo");
+  
+  for(i = 0; i < imgs.length; i++) {
+    imgs[i].style.display = "none";
+  }
+  index++;
+  if (index > imgs.length) {
+    index = 1;
+  }
+  imgs[index -1].style.display = "block"
+  setTimeout(slideShow, 5000);
+}
 
 
 

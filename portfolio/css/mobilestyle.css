@@ -53,13 +53,13 @@
     display: flex;
     justify-content: space-between;
     font-family: var(--primary-en);
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 700;
     gap: 5px;
   }
   #contact {
     margin-top: 2px;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 700;
   }
 
@@ -70,7 +70,7 @@
   }
   .about-contents .about-txt {
     width: 80%;
-    height: 50vh;
+    height: 40vh;
     font-size: 1em;
     transform: translateX(-9%);
   }
@@ -84,6 +84,9 @@
   .about-txt p {
     color: var(--dark-black);
     font-size: 1.3em;
+  }
+  .about-txt .overview {
+    font-size: 1em;
   }
   .about-pic img{
     height: 50vh;
@@ -104,7 +107,7 @@
   }
   .web-content,
   .mobile-content {
-  padding: 5px;
+  padding:  15px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -142,15 +145,16 @@
   }
   .text h2 {
     font-weight: 600;
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   .text p {
     font-weight: 400;
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
 
   /* === Mobile Page === */
   #mobile {
+    height: 60vh;
     padding-top: 50px;
   }
   #mobile .mobile-inner {
@@ -197,11 +201,11 @@
   }
   .todolists .list-item {
     border: 1px solid var(--bouquet);
-    width: 330px;
+    width: 310px;
     height: 580px;
     position: absolute;
     top: 45px;
-    left: -7px;
+    left: 4px;
     margin: 20px 10px;
     border-radius: 20px;
   }
@@ -238,7 +242,7 @@
   
   /* === Button === */
   .view-more {
-    margin-top: 20px;
+    margin: 20px auto;
     width: 100px;
     height: 30px;
     font-size: 0.5em;

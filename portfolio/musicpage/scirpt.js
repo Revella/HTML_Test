@@ -7,11 +7,11 @@ let i = 0;
 
 for(let el of lists) {
   el.style.transform = `rotate(${deg*i}deg) translateY(-100vh)`
-  i++;
   
   let pic = el.querySelector(".pic");
-  pic.style.backgroundImage = `url(/musicpage/img/member${i}.jpg)`;
-
+  pic.style.backgroundImage = `url(/musicpage/img/member${i + 1}.jpg)`;
+  i++;
+  
   let play = el.querySelector(".play");
   let pause = el.querySelector(".pause");
   let load = el.querySelector(".load");

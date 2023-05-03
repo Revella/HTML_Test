@@ -1,0 +1,11 @@
+section#about 
+	div.about-inner
+		div.aboutcontents
+			div.about-txt
+				h2.hd-txt
+				div.about-name
+					h4.hd-txt + p
+				h4.hd-txt + p.overview.txt_1
+				div.about-pic > img
+				
+				

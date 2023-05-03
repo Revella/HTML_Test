@@ -1,0 +1,19 @@
+main#main-header
+	div.main-pic .slider
+		div#mainWrap .main-warp
+			(div.pic *$)*5
+			div.arrow.btn_back > i
+			div.arrow.btn_next > i
+		ul.slide_pagination
+	div.main_txt
+		(div.txt$)*3
+		
+nav#main-gnb
+	div.nav-bar
+		span.Logo > a
+		div.content-bar
+		ul.gnb
+			(li.gnb-item > a.navBtn)*4
+		button#contact
+		
+		

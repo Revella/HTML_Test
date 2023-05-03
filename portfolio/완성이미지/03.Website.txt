@@ -1,0 +1,9 @@
+section#website
+	div.website-inner
+		div.web-contents
+			(div.web-content
+				div.pic-item
+				div.web-pic > img
+				div.website-txt .text > h2 + p + button.web-more.view-more)*3
+				
+				

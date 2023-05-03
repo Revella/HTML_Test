@@ -1,0 +1,20 @@
+div#container
+	div#wrap
+		div#pic
+		div#header > h1
+		div#contents
+			div.content > i 
+			div.contact-mail
+			a > i 
+
+<contact mail modal>
+div#ctModals.ctModal
+	div.md_contents 
+		h2
+		ul
+			li > label > input[type=email]
+			li > textarea
+			li > input[type=submit]
+		button.conCloseBtn
+		
+		

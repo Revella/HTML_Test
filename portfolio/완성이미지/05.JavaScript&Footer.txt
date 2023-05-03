@@ -1,0 +1,16 @@
+section#js
+	div.js-inner
+		div.js-contents
+			div.js-items
+				div.js-text.text > h2
+				div.js-contents
+					div.js-item.todolists
+						form.todolist > input.quest + button.submit
+						div > ul.list-item
+			div.js-items
+				div.js-text.text > h2
+				div.js-contents
+					div.js-item
+						div.pic > img + button.js-more.viewmre
+footer > p*2 
+
