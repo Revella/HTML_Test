@@ -2,7 +2,7 @@ section.mobile
 	div.mobile-inner
 		div.mobile-content
 			div.mobile-pic > img.mInfo
-		div.mobile-txt.text > h3.hd-txt.sub-title + button.mobile-more.view-more
+		div.mobile-txt.text > h3.hd-txt.sub-title + p + button.mobile-more.view-more
 		
 		
 		
