@@ -42,8 +42,20 @@ mainPics.addEventListener("mouseup", (e)=> {
   }
 });
 
-// autoplay //
-setInterval(next, 7000);
+// Mouse focus Pouse // 
+let loopInterval = setInterval(()=> {
+  next()
+}, 3000);
+
+mainPics.addEventListener("mouseover", ()=> {
+  clearInterval(loopInterval);
+});
+
+mainPics.addEventListener("mouseout", ()=> {
+  loopInterval = setInterval(() => {
+    next();
+  }, 6500);
+})
 
 /* === Main Down Scroll === */
 const DownBtn = document.querySelector(".fa-angle-down");
