@@ -42,7 +42,7 @@ mainPics.addEventListener("mouseup", (e)=> {
   }
 });
 
-// Mouse focus Pouse // 
+// Mouse focus Pause // 
 let loopInterval = setInterval(()=> {
   next()
 }, 3000);
