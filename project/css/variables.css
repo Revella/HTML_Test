@@ -1,0 +1,35 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+  /* Font Family */
+  --Main-kr: 'Noto Sans KR', sans-serif;
+  --Main-en: 'Noto Sans', sans-serif;
+  --Sub-en:'Ubuntu', sans-serif;
+
+  /* Font Color */
+  --dark-blue: #001665;
+  --black: #000000;
+  --gray: #555555;
+  --white: #ffffff;
+
+  /* Background Color */
+  --dark-blue: #001665;
+  --yellow: #ffe610;
+  --green: #00c538;
+
+  /* Mobile @Media */
+  --media: 767px;
+
+  /* Font Size */
+  --large-title: 4rem;
+  --medium-title: 3rem;
+  --small-title: 2.25rem;
+  --large-text: 1.5rem;
+  --medium-text: 1rem;
+  --small-text: 0.75rem;
+} 
