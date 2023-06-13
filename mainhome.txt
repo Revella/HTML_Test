@@ -1,0 +1,43 @@
+.container
+	.header
+		a.header_logo
+		.header_nav
+			a.header_nav_btn * 5
+	section#main
+		article.main_article_section
+			( div.main_pic >	div.images > div.mainText > (h2 > em) * 2 + (p > em) ) * 2
+			( div.main_pic >	div.images > div.mainText >  (h2 > em) *2 + button.retalBtn *2 )
+		article.problem  > span * 3 
+		article.raiseProblem 
+			div.problem_section1
+				div.photo > img
+				div.head_text > h3 + (p > em) * 2  + span*2
+			div.problem_section2
+				div.photo > img
+				div.head_text > h3 + (p > em) * 2  + span
+		article.solutions
+			div.solutions_1
+				img
+				div.solutionText
+					h3 > p > span
+			div.solutions_2
+				img
+				div.solutionText
+					h3 > p > span
+		article.esgs
+			div.esginner
+				img
+				div.esgText
+					span * 2
+		article.rantal_faq 
+			div.rantal
+				img
+				div.rantalText > span + button.retalBtn
+			div.Faq
+				img
+				div.rantalText > span + button.retalBtn.FaqBtn
+	footer.footer
+		div.footerinner
+			div.footerText
+				span * 2 			
+				

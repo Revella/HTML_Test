@@ -1,0 +1,29 @@
+/* Footer */
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+}
+.footerInner {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerInner span {
+  display: inline-block;
+  color: #ccc;
+  font-weight: bold;
+}
+.footerInner span:last-child {
+  margin-left: 0.625rem;
+}
+
+@media all and (max-width:767px) {
+  .footer {
+    display: none;
+  }
+}

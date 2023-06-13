@@ -1,0 +1,117 @@
+/* Import Local CSS */
+@import url('/CSS/reset.css');
+@import url('/CSS/variables.css');
+@import url('/css/navigation.css');
+@import url('/Navigation&Footer/footer.css');
+@import url(/css/mainstyle.css);
+
+.ticket_history {
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 5px solid red; */
+  color: var(--dark-blue);
+}
+
+.ticket_history .title {
+  text-align: center;
+  font-size: var(--medium-title);
+  margin-bottom: 10px;
+}
+.ticket_history .subtitle {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.ticket_history hr {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.history_inner { 
+  /* border: 4px solid yellowgreen; */
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 70px auto 0;
+  font-size: var(--medium-text);
+}
+
+.history_detail {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px #ccc;
+  margin-bottom: 20px;
+}
+.history_right {
+  margin-left: 40px;
+  font-size: var(--small-title);
+  font-weight: bold;
+}
+.history_right_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-right: 40px;
+}
+.history_right_detail .times {
+  font-size: var(--small-title);
+  font-weight: bold;
+}
+
+.btn_go_to_rental {
+  display: none;
+}
+
+@media all and (max-width:767px) {
+  .ticket_history {
+    height: calc(100vh - 120px);
+    border: 5px solid red;
+    margin-top: 170px;
+  }
+  .ticket_history .title {
+    text-align: center;
+    font-size: var(--small-title);
+    margin-bottom: 10px;
+  }
+  .ticket_history .subtitle {
+    text-align: center;
+    font-size: var(--medium-text);
+    margin-bottom: 20px;
+  }
+  .ticket_history hr {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .history_inner { 
+    border: 4px solid yellowgreen;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto 0;
+    font-size: var(--medium-text);
+  }
+
+
+  .one_left, .three_left {
+    background-color: #ccc;
+  } 
+
+  .btn_go_to_rental {
+    display: block;
+    width: 150px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: var(--yellow);
+    border: none;
+    margin-bottom: 50px;
+  }
+}
